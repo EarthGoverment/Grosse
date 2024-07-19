@@ -1,0 +1,209 @@
+# Cave
+
+
+- type: tile
+  parent: CMPlanetBase
+  id: TGMCPlanetMarsCave
+  name: tiles-tgmc-rock
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_1.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave1
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_2.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave2
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_3.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave3
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_4.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave4
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_5.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave5
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_6.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave6
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_7.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave7
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_8.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave8
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_9.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave9
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_10.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave10
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_11.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave11
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_12.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave12
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_13.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave13
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_14.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave14
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_15.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave15
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_16.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave16
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_17.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave17
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_18.png
+
+- type: tile
+  parent: TGMCPlanetMarsCave
+  id: TGMCPlanetMarsCave18
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_cave_19.png
+
+
+# Dirt
+
+
+- type: tile
+  parent: CMPlanetBase
+  id: TGMCPlanetMarsDirt
+  name: tiles-tgmc-dirt
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_1.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt1
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_2.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt2
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_3.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt3
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_4.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt4
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_5.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt5
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_6.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt6
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_7.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt7
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_8.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt8
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_9.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt9
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_10.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt10
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_11.png
+
+- type: tile
+  parent: TGMCPlanetMarsDirt
+  id: TGMCPlanetMarsDirt11
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_dirt_12.png
+
+
+# Sand
+
+
+- type: tile
+  parent: CMPlanetBase
+  id: TGMCPlanetMarsSand
+  name: tiles-tgmc-sand
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_1.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand1
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_2.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand2
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_3.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand3
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_4.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand4
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_5.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand5
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_6.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand6
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_7.png
+
+- type: tile
+  parent: TGMCPlanetMarsSand
+  id: CMPlanetMarsSand7
+  sprite: /Textures/_TGMC/Tiles/planet/mars/mars_sand_8.png
+  
