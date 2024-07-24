@@ -29,7 +29,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: cm-job-supervisors-marine-high-command
-  whitelisted: true
+  whitelisted: false
   accessGroups:
   - ShipMasterAccess
   special:
