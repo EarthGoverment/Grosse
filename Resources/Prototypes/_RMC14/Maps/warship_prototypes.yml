@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: StandardUNMCWarship
   mapName: Normandy
-  mapPath: /Maps/_RMC14/normandy.yml
+  mapPath: /Maps/_TGMC/normandy.yml
   parent:
   - BaseStation
   - BaseStationNews

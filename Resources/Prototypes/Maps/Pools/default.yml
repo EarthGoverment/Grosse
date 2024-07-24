@@ -1,8 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Savannah
-  - Almayer
+  - Grosse
 
 - type: gameMapPool
   id: DefaultMapPoolAlmayer

@@ -15,7 +15,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 9000
+        damage: 3000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -40,10 +40,40 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 9000
+        damage: 3000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: darkfrostwall
+    
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: TGMCRedWallReinforced
+  name: red wall
+  description: Red wall.
+  suffix: Reinforced
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Walls/red_wall.rsi
+  - type: Icon
+    sprite: _TGMC/Structures/Walls/red_wall.rsi
+  - type: IconSmooth
+    key: walls
+    base: red_wall
+    
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: TGMCDarkfrostWallReinforced
+  name: dark wall
+  description: Dark wall.
+  suffix: Reinforced  
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Walls/darkfrostwall.rsi
+  - type: Icon
+    sprite: _TGMC/Structures/Walls/darkfrostwall.rsi
   - type: IconSmooth
     key: walls
     base: darkfrostwall
