@@ -1,0 +1,30 @@
+﻿- type: entity
+  parent: BasePlasticExplosive
+  name: composition C-4
+  description: Used to put holes in specific areas without too much extra hole. A saboteur's favorite.
+  id: TGMCC4
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Bombs/c4.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: OnUseTimerTrigger
+    delay: 10
+    delayOptions: [10, 30, 60, 120, 300]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: true
+    canToggleStartOnStick: true
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 50
+    intensitySlope: 4
+    maxIntensity: 80
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger

@@ -1,0 +1,54 @@
+﻿- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTilerasputin
+  name: rasputin
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin1
+  name: rasputin 1
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin1.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin2
+  name: rasputin 2
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin2.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin3
+  name: rasputin 3
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin3.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin4
+  name: rasputin 4
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin4.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin5
+  name: rasputin 5
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin5.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin6
+  name: rasputin 6
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin6.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin7
+  name: rasputin 7
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin7.png
+
+- type: tile
+  parent: CMShuttleTileBase
+  id: TGMCShuttleTileRasputin8
+  name: rasputin 8
+  sprite: /Textures/_TGMC/Tiles/shuttle/rasputin8.png
+

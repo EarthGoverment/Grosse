@@ -122,9 +122,9 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
     [ViewVariables]
     public readonly Dictionary<string, float> MarinesPerXeno = new()
     {
-        ["/Maps/_RMC14/lv624.yml"] = 4.25f,
-        ["/Maps/_RMC14/solaris.yml"] = 5.5f,
         ["/Maps/_RMC14/prison.yml"] = 4.5f,
+        ["/Maps/_RMC14/solaris.yml"] = 3.75f,
+        ["/Maps/_TGMC/researchoutpost.yml"] = 4.75f,
     };
 
     private readonly List<MapId> _almayerMaps = [];
@@ -361,7 +361,7 @@ public sealed class CMDistressSignalRuleSystem : GameRuleSystem<CMDistressSignal
             spawnedDropships = true;
             var dropshipMap = _mapManager.CreateMap();
             var dropshipPoints = EntityQueryEnumerator<DropshipDestinationComponent, TransformComponent>();
-            var ships = new[] { "/Maps/_RMC14/alamo.yml", "/Maps/_RMC14/normandy.yml" };
+            var ships = new[] { "/Maps/_TGMC/normandy.yml" };
             var shipIndex = 0;
             while (dropshipPoints.MoveNext(out var destinationId, out _, out var destTransform))
             {
