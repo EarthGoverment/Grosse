@@ -5,7 +5,7 @@
   description: cm-job-description-rifleman
   playTimeTracker: CMJobRifleman
   startingGear: CMGearRifleman
-  icon: "CMJobIconEmpty"
+  icon: "TGMCJobIconRifleman"
   joinNotifyCrew: false
   supervisors: cm-job-supervisors-sl
   accessGroups:
@@ -17,7 +17,6 @@
       firearms: 1
     - type: CMVendorUser
       points: 45
-  hasIcon: false
 
 - type: startingGear
   id: CMGearRifleman
