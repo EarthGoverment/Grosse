@@ -12,6 +12,10 @@
       "directions": 4
     },
     {
+      "name": "turrets_e",
+      "directions": 4
+    },	
+    {
       "name": "broken"
     },
     {

@@ -1,0 +1,10 @@
+# SMART GUN OPERATOR
+
+- type: entity
+  parent: ColMarTechSGGear
+  id: TerraGovTechSGGear
+  name: TerraGovTech squad smart gun operator gear rack
+  description: An automated gear rack for Squad Smart Gun Operators.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi

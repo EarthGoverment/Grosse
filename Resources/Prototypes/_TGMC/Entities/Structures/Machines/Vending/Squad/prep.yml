@@ -1,0 +1,31 @@
+# SQUAD PREPARATION
+
+- type: entity
+  parent: ColMarTechGuns
+  id: TerraGovTechGuns
+  name: TerraGovTech automated weapons rack
+  description: An automated weapon rack hooked up to a big storage of standard-issue weapons.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
+
+- type: entity
+  parent: ColMarTechSurplus
+  id: TerraGovTechSurplus
+  name: TerraGovTech surplus uniform vendor
+  description: An automated rack hooked up to a small storage of standard marine uniforms.
+  components:
+  - type: AccessReader
+    access:
+    - [ "CMAccessMarinePrep" ]
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+
+- type: entity
+  parent: ColMarTechMunitions
+  id: TerraGovTechMunitions
+  name: TerraGovTech automated munition squad vendor
+  description: An automated supply rack hooked up to a small storage of various ammunition types. Can be accessed by any Marine Rifleman.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi

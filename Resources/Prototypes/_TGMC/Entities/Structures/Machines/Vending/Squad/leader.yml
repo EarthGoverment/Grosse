@@ -1,0 +1,10 @@
+# SQUAD LEADER
+
+- type: entity
+  parent: ColMarTechSLGear
+  id: TerraGovTechSLGear
+  name: TerraGovTech squad leader gear rack
+  description: An automated gear rack for Squad Leaders.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/gear.rsi

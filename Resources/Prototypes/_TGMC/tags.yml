@@ -1,2 +1,6 @@
 - type: Tag
   id: Rapier
+- type: Tag
+  id: TGMCMagazineRifleTurret
+- type: Tag
+  id: TGMCMagazineTurret10x50

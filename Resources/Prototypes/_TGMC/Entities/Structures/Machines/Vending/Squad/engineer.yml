@@ -1,0 +1,10 @@
+# COMBAT TECHNICIAN
+
+- type: entity
+  parent: ColMarTechSCTGear
+  id: TerraGovTechSCTGear
+  name: TerraGovTech squad comtech gear rack
+  description: An automated gear rack for combat technicians.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/combat_technician_gear.rsi

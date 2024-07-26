@@ -1,0 +1,10 @@
+# HOSPITAL CORPSMAN
+
+- type: entity
+  parent: ColMarTechMedicalGear
+  id: TerraGovTechMedicalGear
+  name: TerraGovTech squad medical gear rack
+  description: An automated gear rack for hospital corpsmen.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
