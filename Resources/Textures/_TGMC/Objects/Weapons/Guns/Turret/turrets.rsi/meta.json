@@ -8,11 +8,15 @@
   },
   "states": [
     {
-      "name": "turrets",
+      "name": "base",
       "directions": 4
     },
     {
-      "name": "turrets_e",
+      "name": "base_e",
+      "directions": 4
+    },
+    {
+      "name": "mag-0",
       "directions": 4
     },	
     {

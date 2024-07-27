@@ -1,7 +1,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: TGMCMagazineTurret10x50
-  name: "M54CE2 magazine (10x50mm)"
+  name: "Turrets magazine (10x50mm)"
   components:
   - type: Tag
     tags:
