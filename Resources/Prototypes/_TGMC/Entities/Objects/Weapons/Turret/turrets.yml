@@ -1,0 +1,115 @@
+﻿- type: entity
+  parent: BaseStructure
+  abstract: true
+  id: TGMCBaseWeaponTurret
+  name: ballistic turret
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Actions
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Guns/Turret/turrets.rsi
+    drawdepth: Mobs
+    noRot: true
+    layers:
+    - state: turrets
+      map: ["enum.GunVisualLayers.Base"]
+    - state: turrets_e
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stand
+    - state: turrets
+  - type: InteractionPopup
+    interactDelay: 0.2
+    successChance: 0.8
+    interactSuccessString: petting-success-generic
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Effects/double_beep.ogg
+  - type: CombatMode
+    toggleMouseRotator: false
+  - type: Gun
+    fireRate: 6
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+  - type: HTN
+    rootTask:
+      task: RMCTurretCompound
+    blackboard:
+      RotateSpeed: !type:Single
+        3.141
+      SoundTargetInLOS: !type:SoundPathSpecifier
+        path: /Audio/Effects/double_beep.ogg
+      VisionRadius: !type:Single
+        9.0
+  - type: MouseRotator
+    angleTolerance: 5
+    rotationSpeed: 180
+    simple4DirMode: false
+  - type: NoRotateOnInteract
+  - type: NoRotateOnMove
+  - type: GunIFF
+    intrinsic: true
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalGlassBreak
+          - !type:SpawnEntitiesBehavior
+           spawn:
+            SheetSteel1:
+              min: 3
+              max: 5
+  - type: MagazineAmmoProvider
+    autoEject: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+- type: entity
+  parent: TGMCBaseWeaponTurret
+  id: TGMCWeaponTurret
+  suffix: UNMC
+  components:
+    - type: NpcFactionMember
+      factions:
+        - UNMC
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          insertSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_reload.ogg
+          ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_unload.ogg
+          priority: 2
+          whitelist:
+            tags:
+            - TGMCMagazineTurret10x50

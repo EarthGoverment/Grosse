@@ -1,0 +1,28 @@
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineTurret10x50
+  name: "M54CE2 magazine (10x50mm)"
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - TGMCMagazineTurret10x50
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgeSentry10x50mm
+    proto: CMCartridgeSentry10x50mm
+    capacity: 300
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Guns/Ammunition/Magazines/turret.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

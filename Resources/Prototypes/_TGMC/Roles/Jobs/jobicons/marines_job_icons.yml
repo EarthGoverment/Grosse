@@ -1,0 +1,6 @@
+- type: statusIcon
+  parent: CMJobIconBase
+  id: TGMCJobIconRifleman
+  icon:
+    sprite: /Textures/_TGMC/Interface/cm_job_icons.rsi
+    state: hudsquad_rifleman

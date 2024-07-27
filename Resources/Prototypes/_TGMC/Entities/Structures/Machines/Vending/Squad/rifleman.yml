@@ -1,0 +1,10 @@
+# RIFLEMAN
+
+- type: entity
+  parent: ColMarTechEquipment
+  id: TerraGovTechEquipment
+  name: TerraGovTech automated marine equipment rack
+  description: An automated rack hooked up to a colossal storage of Marine Rifleman standard-issue equipment.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
