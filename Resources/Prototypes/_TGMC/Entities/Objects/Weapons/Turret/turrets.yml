@@ -27,12 +27,11 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - state: turrets
-      map: ["enum.GunVisualLayers.Base"]
-    - state: turrets_e
-      map: ["enum.GunVisualLayers.Mag"]
     - state: stand
-    - state: turrets
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
   - type: InteractionPopup
     interactDelay: 0.2
     successChance: 0.8
@@ -66,6 +65,8 @@
   - type: NoRotateOnMove
   - type: GunIFF
     intrinsic: true
+  - type: Damageable
+    damageContainer: Inorganic
   - type: Destructible
     thresholds:
       - trigger:
@@ -85,9 +86,9 @@
               collection: MetalGlassBreak
           - !type:SpawnEntitiesBehavior
            spawn:
-            SheetSteel1:
-              min: 3
-              max: 5
+            TGMCWeaponTurretBroken:
+              min: 1
+              max: 1
   - type: MagazineAmmoProvider
     autoEject: true
   - type: MagazineVisuals
@@ -113,3 +114,19 @@
           whitelist:
             tags:
             - TGMCMagazineTurret10x50
+
+- type: entity
+  parent: BaseStructure
+  id: TGMCWeaponTurretBroken
+  name: ballistic turret (broken)
+  description: A ballistic machine gun auto-turret.
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: _TGMC/Objects/Weapons/Guns/Turret/turrets.rsi
+      drawdepth: Mobs
+      layers:
+        - state: broken
+    - type: Damageable
+      damageContainer: Inorganic
