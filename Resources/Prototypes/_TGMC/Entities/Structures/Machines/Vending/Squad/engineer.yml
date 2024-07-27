@@ -8,3 +8,12 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/combat_technician_gear.rsi
+
+- type: entity
+  parent: ColMarTechSCTEquipment
+  id: TerraGovTechSCTEquipment
+  name: TerraGovTech squad comtech equipment rack
+  description: An automated rack hooked up to a colossal storage of combat technician standard-issue equipment.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/marineuniform.rsi

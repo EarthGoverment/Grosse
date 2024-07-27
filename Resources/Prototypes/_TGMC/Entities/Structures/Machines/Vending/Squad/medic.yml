@@ -8,3 +8,12 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
+
+- type: entity
+  parent: ColMarTechMedicalEquipment
+  id: TerraGovTechMedicalEquipment
+  name: TerraGovTech squad medical equipment rack
+  description: An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/marineuniform.rsi
