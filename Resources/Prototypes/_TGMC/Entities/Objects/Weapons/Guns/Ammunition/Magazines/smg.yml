@@ -1,0 +1,100 @@
+- type: entity
+  id: TGMCMagazineTopSubMachineGunP90
+  name: P90 magazine (10x20mm)
+  parent: CMMagazineSMGM63
+  components:
+  - type: Tag
+    tags:
+      - TGMCMagazineTopSubMachineGunP90
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridge10x20mm
+    proto: CMCartridge10x20mm
+    capacity: 50
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/p90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: TGMCMagazineTopSubMachineGunMP5
+  name: MP5 magazine (10x20mm)
+  parent: CMMagazineSMGM63
+  components:
+  - type: Tag
+    tags:
+      - TGMCMagazineTopSubMachineGunMP5
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridge10x20mm
+    proto: CMCartridge10x20mm
+    capacity: 40
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/mp5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+
+- type: entity
+  id: TGMCMagazineTopSubMachineGunVector
+  name: Vector magazine (10x20mm)
+  parent: CMMagazineSMGM63
+  components:
+  - type: Tag
+    tags:
+      - TGMCMagazineTopSubMachineGunVector
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridge10x20mm
+    proto: CMCartridge10x20mm
+    capacity: 45
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/vector.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance

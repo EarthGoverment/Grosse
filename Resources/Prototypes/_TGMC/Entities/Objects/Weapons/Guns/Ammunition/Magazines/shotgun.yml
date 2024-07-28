@@ -1,0 +1,13 @@
+- type: entity
+  parent: CMBoxShotgunBase
+  id: TGMCBoxShotgunBuckshot
+  name: box of buckshot shells
+  description: A box filled with buckshot spread shotgun shells. 12 Gauge.
+  components:
+  - type: BallisticAmmoProvider
+    proto: TGMCShellShotgunMagnum12
+  - type: Sprite
+    layers:
+    - state: buckshot_e
+    - state: buckshot
+      map: [ "enum.CMAmmoBoxLayers.Ammo" ]

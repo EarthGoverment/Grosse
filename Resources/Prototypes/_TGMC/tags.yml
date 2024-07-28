@@ -4,3 +4,35 @@
   id: TGMCMagazineRifleTurret
 - type: Tag
   id: TGMCMagazineTurret10x50
+- type: Tag
+  id: PowerpackFlame
+- type: Tag
+  id: TankFlamethrower
+- type: Tag
+  id: FireThrowerBall
+- type: Tag
+  id: NoSpinOnThrow
+- type: Tag
+  id: MagazineRifleRocket20
+- type: Tag
+  id: MagazineLightRiflePkBox
+- type: Tag
+  id: MagazineLightMachineGunDrum
+- type: Tag
+  id: TGMCPowerpackRifle
+- type: Tag
+  id: TGMCMagazineTopSubMachineGunP90
+- type: Tag
+  id: TGMCMagazineTopSubMachineGunMP5
+- type: Tag
+  id: TGMCMagazineTopSubMachineGunVector
+- type: Tag
+  id: CartridgeRifleRocket20
+- type: Tag
+  id: MagazineHeavyMachineGunDrum
+- type: Tag
+  id: TGMCMagazineRifleAKMC
+- type: Tag
+  id: TGMCMagazineRifleG36
+- type: Tag
+  id: TGMCMagazineRifleM28

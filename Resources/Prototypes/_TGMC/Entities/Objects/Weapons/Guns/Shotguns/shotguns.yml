@@ -1,0 +1,118 @@
+- type: entity
+  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
+  name: XM1014
+  id: TGMCWeaponShotgunXM1014
+  description: An Aegis Battlefield Armaments classic design, the M42A2 combines close-range firepower with long term reliability. Needs to be pumped.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/sh-39/big.rsi
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/sh-39/tiny.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/sh-39/tiny.rsi
+  - type: Gun
+    shotsPerBurst: 1
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    recoilWielded: 2
+    recoilUnwielded: 4
+    scatterWielded: 10
+    scatterUnwielded: 10
+    baseFireRate: 1
+    burstScatterMult: 5
+  - type: PumpAction
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentRecoilCompensator
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-stock:
+        whitelist:
+          tags:
+          - RMCAttachmentM42A2WoodenStock
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.81, 0.06
+      rmc-aslot-rail: -0.025, 0.125
+      rmc-aslot-stock: -0.375, -0.029
+      rmc-aslot-underbarrel: 0.25, -0.31
+
+- type: entity
+  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
+  name: Spas-12
+  id: TGMCWeaponShotgunSpas12
+  description: An Aegis Battlefield Armaments classic design, the M42A2 combines close-range firepower with long term reliability. Needs to be pumped.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/spas-16/big.rsi
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/spas-16/tiny.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Shotguns/spas-16/tiny.rsi
+  - type: Gun
+    shotsPerBurst: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/Shotguns/t35.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    recoilWielded: 2
+    recoilUnwielded: 4
+    scatterWielded: 12
+    scatterUnwielded: 12
+    baseFireRate: 1.2
+    burstScatterMult: 6
+  - type: PumpAction
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentRecoilCompensator
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.81, 0.06
+      rmc-aslot-rail: -0.025, 0.125
+      rmc-aslot-stock: -0.375, -0.029
+      rmc-aslot-underbarrel: 0.25, -0.31
