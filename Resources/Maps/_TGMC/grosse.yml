@@ -1904,6 +1904,102 @@ entities:
     - type: Transform
       pos: 74.17504,-27.98751
       parent: 1
+- proto: CableApcExtension
+  entities:
+  - uid: 3028
+    components:
+    - type: Transform
+      pos: 85.5,-15.5
+      parent: 1
+  - uid: 3029
+    components:
+    - type: Transform
+      pos: 85.5,-16.5
+      parent: 1
+  - uid: 3030
+    components:
+    - type: Transform
+      pos: 85.5,-17.5
+      parent: 1
+  - uid: 3031
+    components:
+    - type: Transform
+      pos: 86.5,-17.5
+      parent: 1
+  - uid: 3032
+    components:
+    - type: Transform
+      pos: 87.5,-17.5
+      parent: 1
+  - uid: 3033
+    components:
+    - type: Transform
+      pos: 88.5,-17.5
+      parent: 1
+  - uid: 3034
+    components:
+    - type: Transform
+      pos: 89.5,-17.5
+      parent: 1
+  - uid: 3035
+    components:
+    - type: Transform
+      pos: 90.5,-17.5
+      parent: 1
+  - uid: 3036
+    components:
+    - type: Transform
+      pos: 91.5,-17.5
+      parent: 1
+  - uid: 3037
+    components:
+    - type: Transform
+      pos: 92.5,-17.5
+      parent: 1
+  - uid: 3038
+    components:
+    - type: Transform
+      pos: 93.5,-17.5
+      parent: 1
+- proto: CableHV
+  entities:
+  - uid: 3021
+    components:
+    - type: Transform
+      pos: 85.5,-18.5
+      parent: 1
+  - uid: 3022
+    components:
+    - type: Transform
+      pos: 84.5,-18.5
+      parent: 1
+  - uid: 3023
+    components:
+    - type: Transform
+      pos: 84.5,-17.5
+      parent: 1
+  - uid: 3024
+    components:
+    - type: Transform
+      pos: 84.5,-16.5
+      parent: 1
+- proto: CableMV
+  entities:
+  - uid: 3025
+    components:
+    - type: Transform
+      pos: 84.5,-16.5
+      parent: 1
+  - uid: 3026
+    components:
+    - type: Transform
+      pos: 85.5,-16.5
+      parent: 1
+  - uid: 3027
+    components:
+    - type: Transform
+      pos: 85.5,-15.5
+      parent: 1
 - proto: ChessBoard
   entities:
   - uid: 935
@@ -30343,6 +30439,16 @@ entities:
       parent: 1
     - type: PowerSupplier
       supplyRate: 300000
+  - uid: 3019
+    components:
+    - type: Transform
+      pos: 84.5,-18.5
+      parent: 1
+  - uid: 3020
+    components:
+    - type: Transform
+      pos: 85.5,-18.5
+      parent: 1
   - uid: 7841
     components:
     - type: Transform
@@ -32291,6 +32397,13 @@ entities:
     components:
     - type: Transform
       pos: 55.5,-2.5
+      parent: 1
+- proto: TGMCClothingNeckOfficerCloak
+  entities:
+  - uid: 3039
+    components:
+    - type: Transform
+      pos: -36.5,-1.5
       parent: 1
 - proto: TGMCRubberPip
   entities:
