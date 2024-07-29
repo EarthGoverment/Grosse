@@ -37,3 +37,9 @@
     walkModifier: 1
     sprintModifier: 0.9
   - type: HeldSpeedModifier
+  - type: GunRequiresSkills
+    skills:
+      smartGun: 1
+  - type: GunSkilledRecoil
+    skills:
+      firearms: 100

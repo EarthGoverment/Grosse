@@ -5,11 +5,11 @@
 - type: Tag
   id: TGMCMagazineTurret10x50
 - type: Tag
-  id: PowerpackFlame
+  id: TGMCPowerpackFlame
 - type: Tag
   id: TankFlamethrower
 - type: Tag
-  id: FireThrowerBall
+  id: TGMCFireThrowerBall
 - type: Tag
   id: NoSpinOnThrow
 - type: Tag
@@ -29,10 +29,12 @@
 - type: Tag
   id: CartridgeRifleRocket20
 - type: Tag
-  id: MagazineHeavyMachineGunDrum
+  id: TGMCMagazineHeavyMachineRPD
 - type: Tag
   id: TGMCMagazineRifleAKMC
 - type: Tag
   id: TGMCMagazineRifleG36
 - type: Tag
   id: TGMCMagazineRifleM28
+- type: Tag
+  id: TGMCCartridgePistol556

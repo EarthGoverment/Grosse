@@ -13,7 +13,6 @@
     equipDelay: 10
     unequipDelay: 10
   - type: BallisticAmmoProvider
-    mayTransfer: true
     capacity: 1000
   - type: ClothingSpeedModifier
     walkModifier: 0.6
@@ -41,8 +40,8 @@
   parent: BasePowerpackRifle
   components:
   - type: BallisticAmmoProvider
-    proto: CMCartridgePistolM77AP
+    proto: TGMCCartridgePistol556
     whitelist:
       tags:
-        - CartridgeHeavyRifle
+        - TGMCCartridgePistol556
 

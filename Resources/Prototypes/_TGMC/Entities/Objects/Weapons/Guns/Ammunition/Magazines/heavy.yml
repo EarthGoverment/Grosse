@@ -1,17 +1,17 @@
 - type: entity
-  id: MagazineHeavyMachineGunDrum
+  id: TGMCMagazineHeavyMachineRPD
   name: Drum magazine (.25 caseless)
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - MagazineHeavyMachineGunDrum
+      - TGMCMagazineHeavyMachineRPD
   - type: BallisticAmmoProvider
     mayTransfer: true
-    proto: CartridgeCaselessRifle
+    proto: CMCartridgePistolM77AP
     whitelist:
       tags:
-        - CartridgeCaselessRifle
+        - CMCartridgePistolM77AP
     capacity: 200
   - type: Item
     size: Huge
@@ -19,7 +19,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Heavy/mg42.rsi
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Heavy/v41.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -41,11 +41,11 @@
       - MagazineLightMachineGunDrum
   - type: BallisticAmmoProvider
     mayTransfer: true
-    proto: CartridgeRifle
+    proto: CMCartridgeSmartGun10x30mm
     whitelist:
       tags:
-        - CartridgeRifle
-    capacity: 250
+        - CMCartridgeSmartGun10x30mm
+    capacity: 500
   - type: Item
     size: Small
   - type: ContainerContainer

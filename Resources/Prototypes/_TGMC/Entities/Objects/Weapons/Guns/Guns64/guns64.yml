@@ -1,7 +1,7 @@
 - type: entity
   name: Огнемет М6
   parent: BaseItem
-  id: WeaponflamethrowerSG
+  id: TGMCWeaponflamethrowerSG
   suffix: Огнемёт
   description: The M-60 is a large man portable machine, allowing for sustained, accurate suppressive firepower at the cost of mobility and handling. Commonly seen where their preferred tactics of fast, mobile aggression is ill suited.
   components:
@@ -32,7 +32,7 @@
     targetSlot: BACK
     providerWhitelist:
       tags:
-      - PowerpackFlame
+      - TGMCPowerpackFlame
   - type: Appearance
   - type: Wieldable
   - type: UseDelay
@@ -68,24 +68,24 @@
 #    hasSafety: true
 
 - type: entity
-  id: PowerpackFlame
+  id: TGMCPowerpackFlame
   name: "powerpack (flame)"
   parent: BaseItem
   components:
   - type: Tag
     tags:
-      - PowerpackFlame
+      - TGMCPowerpackFlame
   - type: Item
     size: Ginormous
   - type: Clothing
     slots: BACK
     sprite: _TGMC/Objects/Clothing/Back/Powerpacks/flamepack.rsi
   - type: BallisticAmmoProvider
-    proto: FireThrowerBall
+    proto: TGMCFireThrowerBall
     mayTransfer: true
     whitelist:
       tags:
-        - FireThrowerBall
+        - TGMCFireThrowerBall
     capacity: 1000
   - type: ContainerContainer
     containers:
@@ -106,7 +106,7 @@
 - type: entity
   name: ручной огнемет М6
   parent: BaseWeaponRifle
-  id: FirethrowerGun
+  id: TGMCFirethrowerGun
   suffix: Огнемёт
   description: Nomadov's jet flamethrower, an amazing thing, on the weapon there is an inscription "Death to the enemies of mankind!"
   components:
@@ -137,7 +137,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: FuelTankFirethrower
+        startingItem: TGMCFuelTankFirethrower
         insertSound: /Audio/_TGMC/Weapons/Guns64/Flamethrowers/flamethrower_reload.ogg
         ejectSound: /Audio/_TGMC/Weapons/Guns64/Flamethrowers/flamethrower_unload.ogg
         priority: 2
@@ -189,7 +189,7 @@
 #    hasSafety: true
 
 - type: entity
-  id: FuelTankFirethrower
+  id: TGMCFuelTankFirethrower
   name: топливный бак для огнемёта
   description: Удивительная горючая реактивная смесь, которая вспыхивает ярко голубым пламенем.
   parent: BaseItem
@@ -200,10 +200,10 @@
   - type: BallisticAmmoProvider
     mayTransfer: true
     capacity: 100
-    proto: FireThrowerBall
+    proto: TGMCFireThrowerBall
     whitelist:
       tags:
-        - FireThrowerBall
+        - TGMCFireThrowerBall
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -217,7 +217,7 @@
   - type: Appearance
 
 - type: entity
-  id: FireThrowerBall
+  id: TGMCFireThrowerBall
   name: реактивная смесь
   parent: FoodInjectableBase
   components:
@@ -240,7 +240,7 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          ParticlesFireNRF:
+          TGMCParticlesFireNRF:
             min: 1
             max: 1
       - !type:DoActsBehavior
@@ -273,7 +273,7 @@
   - type: Tag
     tags:
     - NoSpinOnThrow
-    - FireThrowerBall
+    - TGMCFireThrowerBall
   - type: TimedDespawn
     lifetime: 5
   - type: ThrowingAngle
@@ -288,7 +288,7 @@
 - type: entity
   name: струя реактивного пламени
   description: Очень горячо!
-  id: ParticlesFireNRF
+  id: TGMCParticlesFireNRF
   components:
   - type: Physics
   - type: Sprite
@@ -381,8 +381,8 @@
 - type: entity
   name: струя реактивного пламени
   description: Очень горячо!
-  id: ParticlesFireNRFHELL
-  parent: ParticlesFireNRF
+  id: TGMCParticlesFireNRFHELL
+  parent: TGMCParticlesFireNRF
   suffix: АДское пламе
   components:
   - type: EdgeSpreader

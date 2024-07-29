@@ -1,102 +1,61 @@
 - type: entity
-  name: RPD
-  parent: BaseWeaponLightMachineGun
-  id: WeaponLightMachineGunRPD
-  suffix: Пулемёт
-  description: A cheap and robust machinegun, sometimes better known as an 'RPD'. Despite lacking attachment points beyond its underbarrel, remains a popular product on the black market with its cheap cost, high capacity and higher than usual caliber rounds.
-  components:
-  - type: Sprite
-    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/big.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/tiny.rsi
-  - type: Item
-    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/tiny.rsi
-  - type: BkmGunWieldBonus
-    cameraRecoilScalar: -4
-  - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -50
-  - type: Gun
-    minAngle: 34
-    maxAngle: 55
-    cameraRecoilScalar: 5
-    fireRate: 5
-    soundGunshot:
-      path: /Audio/_TGMC/Weapons/Guns64/Rifles/ak47.ogg
-  - type: ChamberMagazineAmmoProvider
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineLightRiflePkBox
-        insertSound: /Audio/_TGMC/Weapons/Guns64/Rifles/ak47_reload.ogg
-        ejectSound: /Audio/_TGMC/Weapons/Guns64/Rifles/ak47_unload.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineLightRifleBox
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeLightRifle
-        priority: 1
-        whitelist:
-          tags:
-            - CartridgeLightRifle
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: true
-  - type: Appearance
-  - type: Wieldable
-  - type: UseDelay
-    delay: 1.9
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 0.8
-  - type: HeldSpeedModifier
-
-- type: entity
+  parent: CMBaseWeaponRifle
+  id: TGMCSmartGun
   name: MG-60
-  parent: BaseWeaponLightMachineGun
-  id: WeaponLightMachineGunMG60
-  suffix: Пулемёт
-  description: The Raummetall MG-60 general purpose machinegun is the EarthGov Army's current standard GPMG. Though usually seen mounted on vehicles, it is sometimes used by infantry to hold chokepoints or suppress enemies, or in rare cases for marching fire.
+  description: The actual firearm in the Smart Gun System. Essentially a heavy, mobile machinegun.
   components:
+  - type: GunRequiresWield
+  - type: Corrodible
+    isCorrodible: false
+  - type: GunIFF
+  - type: WieldDelay
+    baseDelay: 0.4
+  - type: WieldableSpeedModifiers
+    baseWalk: 0.696
+    baseSprint: 0.559
   - type: Sprite
     sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/t42/big.rsi
     layers:
     - state: base
-      map: ["enum.GunVisualLayers.Base"]
+      map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
+      map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
     sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/t42/tiny.rsi
   - type: Item
     sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/t42/tiny.rsi
-  - type: BkmGunWieldBonus
-    cameraRecoilScalar: -4
-  - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -50
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 20
   - type: Gun
-    minAngle: 34
-    maxAngle: 55
-    cameraRecoilScalar: 5
-    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
     soundGunshot:
       path: /Audio/_TGMC/Weapons/Guns64/LMGs/t42.ogg
-      params:
-        volume: -3
-  - type: ChamberMagazineAmmoProvider
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - FullAuto
+    recoilWielded: 3
+    scatterWielded: 10
+    baseFireRate: 5
+    burstScatterMult: 4
+    modifiers:
+      FullAuto:
+        maxScatterModifier: 4
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 80
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      cell_slot: !type:ContainerSlot { }
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -108,27 +67,155 @@
         whitelist:
           tags:
             - MagazineLightMachineGunDrum
-      gun_chamber:
-        name: Chamber
-        startingItem: CartridgeRifle
-        priority: 1
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCellSmartgun
+  - type: GunDamageModifier
+    multiplier: 1
+  - type: GunToggleableAmmo
+    settings:
+    - damage:
+        types:
+          Piercing: 30
+      armorPiercing: 0
+      name: rmc-toggleable-ammo-highly-precise
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_normal
+    - damage:
+        types:
+          Piercing: 20
+      armorPiercing: 40
+      name: rmc-toggleable-ammo-armor-shredding
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_ap
+  - type: RMCMagneticItem
+  - type: GunRequiresSkills
+    skills:
+      smartGun: 1
+  - type: GunSkilledRecoil
+    skills:
+      firearms: 100
+  - type: GunDrainBatteryOnShoot
+  - type: GunToggleableRecoil
+  - type: GunToggleableAutoFire
+  - type: SmartGun
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
         whitelist:
           tags:
-            - CartridgeRifle
+          - RMCAttachmentRailFlashlight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-rail: -0.1875, 0.125
+
+- type: entity
+  parent: CMBaseWeaponRifle
+  id: TGMCRPD
+  name: RPD
+  description: The actual firearm in the Gun.
+  components:
+  - type: GunRequiresWield
+  - type: Corrodible
+    isCorrodible: false
+  - type: GunIFF
+  - type: WieldDelay
+    baseDelay: 0.4
+  - type: WieldableSpeedModifiers
+    baseWalk: 0.696
+    baseSprint: 0.559
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/tiny.rsi
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/rpd/tiny.rsi
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 20
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/LMGs/t42.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - FullAuto
+    recoilWielded: 3
+    scatterWielded: 12
+    baseFireRate: 4.5
+    burstScatterMult: 4
+    modifiers:
+      FullAuto:
+        maxScatterModifier: 4
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 80
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 2
-    zeroVisible: true
-  - type: Appearance
-  - type: Wieldable
-  - type: UseDelay
-    delay: 1.9
-  - type: GunRequiresWield
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 0.6
-  - type: HeldSpeedModifier
+      cell_slot: !type:ContainerSlot { }
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TGMCMagazineHeavyMachineRPD
+        insertSound: /Audio/_TGMC/Weapons/Guns64/Rifles/ak47_reload.ogg
+        ejectSound: /Audio/_TGMC/Weapons/Guns64/Rifles/ak47_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - TGMCMagazineHeavyMachineRPD
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCellSmartgun
+  - type: GunDamageModifier
+    multiplier: 1
+  - type: GunToggleableAmmo
+    settings:
+    - damage:
+        types:
+          Piercing: 30
+      armorPiercing: 0
+      name: rmc-toggleable-ammo-highly-precise
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_normal
+    - damage:
+        types:
+          Piercing: 20
+      armorPiercing: 40
+      name: rmc-toggleable-ammo-armor-shredding
+      icon:
+        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
+        state: ammo_swap_ap
+  - type: RMCMagneticItem
+  - type: GunSkilledRecoil
+    skills:
+      firearms: 1
+  - type: GunDrainBatteryOnShoot
+  - type: GunToggleableRecoil
+  - type: GunToggleableAutoFire
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-rail: -0.1875, 0.125

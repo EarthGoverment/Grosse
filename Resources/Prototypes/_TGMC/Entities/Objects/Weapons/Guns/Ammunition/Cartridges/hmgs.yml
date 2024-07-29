@@ -1,0 +1,43 @@
+- type: entity
+  parent: CMBulletBase
+  id: TGMCBulletPistol556
+  name: bullet (5.56)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+  - type: CMArmorPiercing
+    amount: 20
+
+- type: entity
+  id: TGMCCartridgePistol556
+  name: cartridge (5.56)
+  parent: CMCartridgePistolBase
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - TGMCCartridgePistol556
+  - type: CartridgeAmmo
+    proto: TGMCBulletPistol556
+
+- type: entity
+  parent: BaseMagazineBoxCaselessRifle
+  id: TGMCMagazineBoxCaselessRifle556
+  name: ammunition box (5.56)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 500
+    proto: TGMCCartridgePistol556
+  - type: Sprite
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: magb
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
