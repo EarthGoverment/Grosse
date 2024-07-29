@@ -11,6 +11,7 @@
   - type: Item
     sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/minigun/tiny.rsi
     size: Ginormous
+  - type: GunIFF
   - type: Gun
     minAngle: 1
     maxAngle: 30
@@ -43,3 +44,16 @@
   - type: GunSkilledRecoil
     skills:
       firearms: 100
+  - type: RMCMagneticItem
+  - type: GunToggleableRecoil
+  - type: GunToggleableAutoFire
+  - type: SmartGun
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-rail: -0.1875, 0.125

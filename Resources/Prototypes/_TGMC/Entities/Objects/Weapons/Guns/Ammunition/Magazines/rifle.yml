@@ -58,7 +58,7 @@
       tags:
       - CMCartridgeRifle10x24mm
     proto: CMCartridgeRifle10x24mm
-    capacity: 35
+    capacity: 40
   - type: Sprite
     sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/ak_long_mag.rsi
     layers:
@@ -82,7 +82,7 @@
       tags:
       - CMCartridgeRifle10x24mm
     proto: CMCartridgeRifle10x24mm
-    capacity: 40
+    capacity: 45
   - type: Sprite
     sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/g36_mag.rsi
     layers:

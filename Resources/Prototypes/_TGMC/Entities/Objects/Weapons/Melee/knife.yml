@@ -12,8 +12,8 @@
     attackRate: 1.6
     damage:
       types:
-        Slash: 10
-        Piercing: 30
+        Slash: 20
+        Piercing: 40
     soundHit:
         path: /Audio/_TGMC/Weapons/rapier.ogg
   - type: Reflect

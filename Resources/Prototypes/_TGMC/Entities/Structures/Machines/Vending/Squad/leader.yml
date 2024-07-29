@@ -8,6 +8,93 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/gear.rsi
+  - type: CMAutomatedVendor
+    jobs:
+    - CMSquadLeader
+    sections:
+    - name: Squad Leader Kit
+      takeAll: CMStandard
+      entries: [ ]
+    - name: Squad Kit CMGlassesM42ScoutSight
+      entries: [ ]
+    - name: Weapons
+      entries:
+      - id: TGMCWeaponRifleG36
+        points: 10
+      - id: TGMCClothingBeltRapierFilled
+        points: 35
+    - name: Glasses
+      entries:
+      - id: CMGlassesM42ScoutSight
+        points: 5
+    - name: Primary Ammunition
+      entries:
+      - id: TGMCMagazineRifleG36
+        points: 2
+    - name: Armors
+      entries:
+      - id: CMArmorM4
+        points: 16
+    - name: Utilities
+      entries:
+      - id: RMCWhistle
+      - id: CMFireExtinguisherPortable
+    - name: Binoculars
+      entries: [ ]
+    - name: Helmet Optics
+      entries: [ ]
+    - name: Engineering Supplies
+      entries:
+      - id: CMHandsInsulated
+        points: 1
+      - id: CMSheetMetal10
+        points: 2
+      - id: CMSheetPlasteel10
+        points: 3
+      - id: CMSandbagEmpty25
+        points: 5
+      - id: CMPouchToolsFill
+        points: 5
+    - name: Explosives
+      entries:
+      - id: CMPacketGrenadeHighExplosiveFilled
+        points: 18
+    - name: Medical Supplies
+      entries:
+      - id: CMBurnKit10
+        points: 2
+      - id: CMTraumaKit10
+        points: 2
+      - id: CMAdvFirstAidKitFilled
+        points: 12
+      - id: CMBicaridineAutoInjector
+        points: 1
+      - id: CMDexalinPlusAutoInjector
+        points: 1
+      - id: CMInaprovalineAutoInjector
+        points: 1
+      - id: CMKelotaneAutoInjector
+        points: 1
+      - id: CMTricordrazineAutoInjector
+        points: 1
+      - id: CMHealthAnalyzer
+        points: 4
+      - id: CMRollerBedSpawnFolded
+        points: 2
+    - name: Radio Keys
+      entries:
+      - id: CMEncryptionKeyEngineer
+        amount: 3
+        points: 3
+      - id: CMEncryptionKeyIntel
+        amount: 3
+        points: 3
+      - id: CMEncryptionKeyJTAC
+        amount: 3
+        points: 3
+      - id: CMEncryptionKeyRequisition
+        amount: 3
+        points: 3
 
 - type: entity
   parent: ColMarTechSLEquipment
@@ -20,3 +107,69 @@
     - [ "CMAccessSquadLeaderPrep" ]
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/marineuniform.rsi
+  - type: CMAutomatedVendor
+    jobs:
+    - CMSquadLeader
+    sections:
+    - name: Standard Equipment
+      takeAll: CMStandard
+      entries:
+      - id: TGMCVendorBundleSquadLeaderApparel
+      - id: CMMRE
+    - name: Armor
+      choices: { CMArmour: 1 }
+      entries:
+      - id: TGMCArmorM3Light
+        name: light armor
+      - id: TGMCArmorM3Medium
+        name: medium armor
+      - id: TGMCArmorM3Heavy
+        name: heavy armor
+    - name: Helmets
+      choices: { CMHelmets: 1 }
+      entries:
+      - id: TGMCArmorHelmetLight
+        name: light helmets
+      - id: TGMCArmorHelmetMedium
+        name: medium helmets
+      - id: TGMCArmorHelmetDemolitionist
+        name: heavy helmets
+    - name: Backpack
+      choices: { CMBackpack: 1 }
+      entries:
+      - id: CMBackpackMarine
+      - id: CMSatchelMarine
+    - name: Belt
+      choices: { CMBelt: 1 }
+      entries:
+      - id: CMBeltMarine
+      - id: CMBeltMedicBag
+      - id: CMBeltMedical
+      - id: CMBeltUtilityFilled
+      - id: RMCBeltGrenade
+    - name: Pouches
+      choices: { CMPouch: 2 }
+      entries:
+      - id: CMPouchAutoinjectorFill
+      - id: CMPouchFirstAidInjectors
+        name: first-aid pouch (refillable injectors)
+      - id: CMPouchFirstAidSplintsGauzeOintment
+        name: first-aid pouch (gauze, ointment)
+      - id: CMPouchFirstAidPills
+        name: first-aid pouch (pills)
+      - id: CMPouchFlareFilled
+        name: Flare pouch (Filled)
+      - id: CMPouchGeneralLarge
+      - id: CMPouchMagazineLarge
+      - id: CMPouchMagazinePistolLarge
+      - id: CMPouchPistol
+    - name: Accessories
+      choices: { CMAccessories: 1 }
+      entries:
+      - id: CMWebbingBrown
+      - id: CMWebbingBlack
+      - id: CMWebbing
+    - name: Mask
+      entries:
+      - id: CMMaskGas
+      - id: CMMaskCoif

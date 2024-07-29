@@ -33,7 +33,7 @@
 
 - type: entity
   id: MagazineLightMachineGunDrum
-  name: Drum magazine (.20 винтовочный)
+  name: MG-60 magazine
   parent: BaseItem
   components:
   - type: Tag

@@ -64,6 +64,10 @@
     vaporAmount: 3
     vaporSpread: 30
     sprayVelocity: 2.0
+  - type: RMCMagneticItem
+  - type: GunToggleableRecoil
+  - type: GunToggleableAutoFire
+  - type: SmartGun
 #  - type: FireExtinguisher
 #    hasSafety: true
 

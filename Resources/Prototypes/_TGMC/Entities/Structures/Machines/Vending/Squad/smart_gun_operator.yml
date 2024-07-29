@@ -8,6 +8,64 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi
+  - type: CMAutomatedVendor
+    jobs:
+    - CMSmartGunOperator
+    sections:
+    - name: Smart Gun
+      choices: { TGMCWeapons: 1 }
+      entries:
+      - id: TGMCWeaponMinigun100
+        points: 30
+      - id: TGMCWeaponflamethrowerSG
+        points: 30
+      - id: TGMCSmartGunMG60
+        points: 20
+    - name: Powerpack
+      choices: { TGMCPowerpack: 5 }
+      entries:
+      - id: TGMCPowerpackRifle
+        points: 7
+      - id: TGMCPowerpackFlame
+        points: 5
+    - name: Magazine
+      choices: { TGMCMagazine: 5 }
+      entries:
+      - id: MagazineLightMachineGunDrum
+        points: 5
+    - name: Ammunition box
+      choices: { TGMCAmmunition: 15 }
+      entries:
+      - id: TGMCMagazineBoxCaselessRifle556
+        points: 4
+    - name: Ammunition
+      choices: { CMGunAmmunition: 1 }
+      entries:
+      - id: RMCGlassesSmartGunSight
+    - name: Explosives
+      entries:
+      - id: CMPacketGrenadeHighExplosiveFilled
+        points: 30
+    - name: Utilities
+      entries:
+      - id: CMFireExtinguisherPortable
+      - id: RMCWhistle
+    - name: Binoculars
+      entries: [ ]
+    - name: Helmet Optics
+      entries: [ ]
+    - name: Pamphlets
+      entries: [ ]
+    - name: Radio Keys
+      entries:
+      - id: CMEncryptionKeyEngineer
+        points: 5
+      - id: CMEncryptionKeyIntel
+        points: 5
+      - id: CMEncryptionKeyJTAC
+        points: 5
+      - id: CMEncryptionKeyRequisition
+        points: 5
 
 - type: entity
   parent: ColMarTechSGEquipment
@@ -17,3 +75,64 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/marineuniform.rsi
+  - type: CMAutomatedVendor
+    jobs:
+    - CMSmartGunOperator
+    sections:
+    - name: Standard Equipment
+      takeAll: CMStandard
+      entries:
+      - id: TGMCVendorBundleRiflemanApparel
+      - id: CMMRE
+    - name: Belt
+      choices: { CMBelt: 1 }
+      entries:
+      - id: CMBeltMarine
+    - name: Armor
+      choices: { CMArmour: 1 }
+      entries:
+      - id: TGMCArmorM3Light
+        name: light armor
+      - id: TGMCArmorM3Medium
+        name: medium armor
+      - id: TGMCArmorM3Heavy
+        name: heavy armor
+    - name: Helmets
+      choices: { CMHelmets: 1 }
+      entries:
+      - id: TGMCArmorHelmetLight
+        name: light helmets
+      - id: TGMCArmorHelmetMedium
+        name: medium helmets
+      - id: TGMCArmorHelmetDemolitionist
+        name: heavy helmets
+    - name: Pouches
+      choices: { CMPouch: 2 }
+      entries:
+      - id: CMPouchFlareFilled
+        name: Flare pouch (Filled)
+      - id: CMPouchFirstAidInjectors
+        name: first-aid pouch (refillable injectors)
+        recommended: true
+      - id: CMPouchFirstAidSplintsGauzeOintment
+        name: first-aid pouch (gauze, ointment)
+        recommended: true
+      - id: CMPouchFirstAidPills
+        name: first-aid pouch (pills)
+        recommended: true
+      - id: CMPouchMagazine
+      - id: CMPouchShotgun
+      - id: CMPouchGeneralMedium
+      - id: CMPouchPistol
+      - id: CMPouchMacheteFilled
+    - name: Accessories
+      choices: { CMAccessories: 1 }
+      entries:
+      - id: CMWebbingBrown
+        recommended: true
+      - id: CMWebbingBlack
+      - id: CMWebbing
+    - name: Mask
+      entries:
+      - id: CMMaskGas
+      - id: CMMaskCoif
