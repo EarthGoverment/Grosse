@@ -1,0 +1,11 @@
+- type: entity
+  parent: CMSatchel
+  id: TGMCBackpackERT
+  name: ERT Satchel
+  description: A specially-designed smock with pockets for all your sniper needs.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Clothing/Back/Satchels/Marines/ert.rsi
+  - type: Storage
+    grid:
+    - 0,0,20,1

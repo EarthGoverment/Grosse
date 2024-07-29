@@ -1,3 +1,5 @@
+# Base
+
 - type: entity
   id: TGMCMagazineTopSubMachineGunP90
   name: P90 magazine (10x20mm)
@@ -98,3 +100,76 @@
     zeroVisible: false
     zeroOnlyOnEmpty: true
   - type: Appearance
+
+# AP
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleP90AP
+  name: "P90 AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleP90AP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/AP/p90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleMP5AP
+  name: "MP5 AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleMP5AP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/AP/mp5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleVectorAP
+  name: "Vector AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleVectorAP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/SMGs/AP/vector.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

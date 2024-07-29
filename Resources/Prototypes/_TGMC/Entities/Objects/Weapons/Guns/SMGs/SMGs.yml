@@ -53,6 +53,7 @@
         whitelist:
           tags:
             - TGMCMagazineTopSubMachineGunVector
+            - TGMCMagazineRifleVectorAP
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -141,6 +142,7 @@
         whitelist:
           tags:
             - TGMCMagazineTopSubMachineGunMP5
+            - TGMCMagazineRifleMP5AP
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -227,6 +229,7 @@
         whitelist:
           tags:
             - TGMCMagazineTopSubMachineGunP90
+            - TGMCMagazineRifleP90AP
   - type: MagazineVisuals
     magState: mag
     steps: 6

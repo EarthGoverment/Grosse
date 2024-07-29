@@ -38,10 +38,8 @@
         points: 18
     - name: Armors
       entries:
-      - id: CMArmorB12
-        points: 24
-      - id: CMArmorM4
-        points: 30
+      - id: TGMCArmorB12
+        points: 15
     - name: Clothing Items
       entries:
       - id: CMPouchMacheteFilled

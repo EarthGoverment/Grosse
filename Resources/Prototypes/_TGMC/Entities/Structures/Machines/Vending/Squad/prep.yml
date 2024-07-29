@@ -13,62 +13,58 @@
     - name: Rifle
       entries:
       - id: TGMCWeaponRifleAKMC
-        amount: 10
+        amount: 15
       - id: TGMCWeaponRifleM28
-        amount: 10
+        amount: 15
     - name: SMG
       entries:
       - id: TGMCWeaponSMGVector
-        amount: 10
+        amount: 15
       - id: TGMCWeaponSMGMP5
-        amount: 10
+        amount: 15
       - id: TGMCWeaponSMGP90
-        amount: 10
+        amount: 15
     - name: Shotgun
       entries:
       - id: TGMCWeaponShotgunXM1014
-        amount: 10
+        amount: 15
     - name: Buckshot
       entries:
       - id: TGMCBoxShotgunBuckshot
-        amount: 5
+        amount: 25
     - name: SMGs
       entries:
       - id: TGMCMagazineTopSubMachineGunVector
-        amount: 15
+        amount: 30
       - id: TGMCMagazineTopSubMachineGunMP5
-        amount: 15
+        amount: 30
       - id: TGMCMagazineTopSubMachineGunP90
-        amount: 15
+        amount: 30
     - name: Rifle
       entries:
       - id: TGMCMagazineRifleAKMC
-        amount: 15
+        amount: 30
       - id: TGMCMagazineRifleM28
-        amount: 15
+        amount: 30
     - name: Sidearms
       entries:
       - id: CMWeaponPistolM77
-        amount: 25
+        amount: 15
       - id: RMCWeaponRevolverM44
-        amount: 25
+        amount: 15
       - id: CMWeaponPistolM1984
-        amount: 25
-      #- id: WeaponFlareM82F
-      #  amount: 10
+        amount: 15
     - name: Sidearm ammunition
       entries:
       - id: CMMagazinePistolM77AP
-        amount: 25
+        amount: 30
       - id: RMCSpeedLoaderM44
-        amount: 20
+        amount: 30
       - id: CMMagazinePistolM1984
-        amount: 25
+        amount: 30
     - name: Attachments
       entries:
       - id: RMCAttachmentM63StockCollapsible
-        amount: 10
-      - id: RMCAttachmentM54CStockCollapsible
         amount: 10
       - id: RMCAttachmentRailFlashlight
         amount: 25
@@ -112,8 +108,6 @@
       - id: CMHandsBlackMarine
         amount: 15
       - id: CMHeadset
-        amount: 15
-      - id: ArmorHelmetM10
         amount: 15
     - name: Webbings
       entries:
@@ -238,3 +232,21 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Special Ammunition
+      entries:
+      - id: RMCSpeedLoader44Marksman
+        amount: 10
+      - id: 10TGMCMagazineRifleAKMCAP
+        points: 2
+      - id: TGMCMagazineRifleM28AP
+        points: 2
+      - id: TGMCMagazineRifleG36AP
+        points: 2
+      - id: TGMCMagazineRifleVectorAP
+        points: 2
+      - id: TGMCMagazineRifleMP5AP
+        points: 2
+      - id: TGMCMagazineRifleP90AP
+        points: 2

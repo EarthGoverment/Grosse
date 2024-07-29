@@ -9,10 +9,10 @@
     sprite: _TGMC/Objects/Clothing/Head/Helmets/scout.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/scout.rsi
-  - type: Storage #hopefully in the future someone smarter than me can add storage(?) for integrated things like netting, HUD, etc. but for now this is for hiding snacks
+  - type: Storage
     maxItemSize: Tiny
     grid:
-    - 0,0,3,1 # TODO RMC14 7, but 2 slots are reserved for garbs
+    - 0,0,3,1
     blacklist:
       tags:
       - Pouch
@@ -42,16 +42,10 @@
       - CMScalpel
       - Figurine
       tags:
-#      - TODO RMC14 matchbox
       - Cigarette
-#      - TODO RMC14 cards
       - Slice
-#      - TODO RMC14 glasses (eyewear)
-#      - TODO RMC14 walkman and casettes
-#      - TODO RMC14 helmet garb
       - Pen
       - Crayon
-#      - TODO RMC14 handful of bullets
       - Flashlight
       - Brutepack
       - CMOintment
@@ -62,6 +56,7 @@
     blacklist:
       components:
       - Xeno
+
 - type: entity
   parent: TGMCArmorHelmetLight
   id: TGMCArmorHelmetMedium
@@ -72,9 +67,6 @@
     sprite: _TGMC/Objects/Clothing/Head/Helmets/grenadier.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/grenadier.rsi
-  - type: CMArmor
-    armor: 25
-    explosionArmor: 15
 
 - type: entity
   parent: TGMCArmorHelmetLight
@@ -86,6 +78,3 @@
     sprite: _TGMC/Objects/Clothing/Head/Helmets/demolitionist.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/demolitionist.rsi
-  - type: CMArmor
-    armor: 30
-    explosionArmor: 20

@@ -15,14 +15,20 @@
     - name: Squad Leader Kit
       takeAll: CMStandard
       entries: [ ]
-    - name: Squad Kit CMGlassesM42ScoutSight
+    - name: Squad Kit
       entries: [ ]
-    - name: Weapons
+    - name: Weapons TGMCBackpackERT
       entries:
       - id: TGMCWeaponRifleG36
         points: 10
+      - id: TGMCWeaponShotgunSpas12
+        points: 10
       - id: TGMCClothingBeltRapierFilled
         points: 35
+    - name: Back
+      entries:
+      - id: TGMCBackpackERT
+        points: 5
     - name: Glasses
       entries:
       - id: CMGlassesM42ScoutSight
@@ -30,11 +36,15 @@
     - name: Primary Ammunition
       entries:
       - id: TGMCMagazineRifleG36
-        points: 2
+        points: 1
+      - id: TGMCMagazineRifleG36AP
+        points: 1
     - name: Armors
       entries:
-      - id: CMArmorM4
-        points: 16
+      - id: TGMCArmorM4
+        points: 10
+      - id: TGMCArmorB12
+        points: 15
     - name: Utilities
       entries:
       - id: RMCWhistle

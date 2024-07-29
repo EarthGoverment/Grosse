@@ -38,3 +38,16 @@
   id: TGMCMagazineRifleM28
 - type: Tag
   id: TGMCCartridgePistol556
+- type: Tag
+  id: TGMCMagazineRifleAKMCAP
+- type: Tag
+  id: TGMCMagazineRifleM28AP
+- type: Tag
+  id: TGMCMagazineRifleG36AP
+- type: Tag
+  id: TGMCMagazineRifleVectorAP
+- type: Tag
+  id: TGMCMagazineRifleMP5AP
+- type: Tag
+  id: TGMCMagazineRifleP90AP
+

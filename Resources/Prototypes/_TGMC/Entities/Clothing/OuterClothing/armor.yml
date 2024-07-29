@@ -64,3 +64,39 @@
   - type: Storage
     grid:
     - 0,0,9,1 # 5 slots
+
+- type: entity
+  parent: CMArmorM3Medium
+  id: TGMCArmorM4
+  name: M4 pattern marine armor
+  description: A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate3.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate3.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,9,1 # 5 slots
+  - type: CMArmor
+    armor: 20
+    bio: 25
+  - type: ClothingSpeedModifier
+    walkModifier: .8
+    sprintModifier: .8
+
+- type: entity
+  parent: CMArmorM3Medium
+  id: TGMCArmorB12
+  name: B12 pattern marine armor
+  description: A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate2.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate2.rsi
+  - type: CMArmor
+    armor: 25
+    bio: 25
+    explosionArmor: 20

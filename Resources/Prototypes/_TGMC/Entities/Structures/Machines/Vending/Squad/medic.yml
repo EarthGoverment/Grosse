@@ -78,12 +78,6 @@
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
-    - name: Armors
-      entries:
-      - id: CMArmorB12
-        points: 28
-      - id: CMArmorM4
-        points: 28
     - name: Clothing Items
       entries:
       - id: CMPouchMacheteFilled
