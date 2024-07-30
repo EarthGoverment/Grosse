@@ -1,0 +1,65 @@
+- type: entity
+  id: TGMCMagazineHeavyMachineRPD
+  name: Drum magazine (.25 caseless)
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - TGMCMagazineHeavyMachineRPD
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    proto: CMCartridgePistolM77AP
+    whitelist:
+      tags:
+        - CMCartridgePistolM77AP
+    capacity: 200
+  - type: Item
+    size: Huge
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Heavy/v41.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineLightMachineGunDrum
+  name: MG-60 magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MagazineLightMachineGunDrum
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    proto: CMCartridgeSmartGun10x30mm
+    whitelist:
+      tags:
+        - CMCartridgeSmartGun10x30mm
+    capacity: 500
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Heavy/mg60.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

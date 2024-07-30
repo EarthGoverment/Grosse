@@ -8,3 +8,116 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Standard Equipment
+      takeAll: CMStandard
+      entries:
+      - id: TGMCVendorBundleRiflemanApparel
+      - id: CMMRE
+        name: MRE
+    - name: Armor
+      choices: { CMArmour: 1 }
+      entries:
+      - id: TGMCArmorM3Light
+        name: light armor
+      - id: TGMCArmorM3Medium
+        name: medium armor
+      - id: TGMCArmorM3Heavy
+        name: heavy armor
+    - name: Helmets
+      choices: { CMHelmets: 1 }
+      entries:
+      - id: TGMCArmorHelmetLight
+        name: light helmets
+      - id: TGMCArmorHelmetMedium
+        name: medium helmets
+      - id: TGMCArmorHelmetDemolitionist
+        name: heavy helmets
+    - name: Backpack
+      choices: { CMBackpack: 1 }
+      entries:
+      - id: CMBackpackMarine
+        name: backpack
+      - id: CMSatchelMarine
+        name: satchel
+        recommended: true
+    - name: Belt
+      choices: { CMBelt: 1 }
+      entries:
+      - id: CMBeltMarine
+        recommended: true
+      - id: CMBeltKnifeFilled
+        name: M276 knife rig (full)
+      - id: CMBeltUtility
+      - id: RMCBeltGrenade
+    - name: Pouches
+      choices: { CMPouch: 2 }
+      entries:
+      - id: CMPouchBayonetFill
+      - id: CMPouchFirstAidInjectors
+        name: first-aid pouch (refillable injectors)
+        recommended: true
+      - id: CMPouchFirstAidSplintsGauzeOintment
+        name: first-aid pouch (gauze, ointment)
+        recommended: true
+      - id: CMPouchFirstAidPills
+        name: first-aid pouch (pills)
+        recommended: true
+      - id: CMPouchFlareFilled
+        name: Flare pouch (Filled)
+        recommended: true
+      - id: CMPouchMagazine
+      - id: CMPouchShotgun
+      - id: CMPouchGeneral
+      - id: CMPouchMagazinePistol
+      - id: CMPouchPistol
+    - name: Mask
+      choices: { CMMask: 1 }
+      entries:
+      - id: CMMaskGas
+      - id: CMMaskCoif
+    - name: Engineering Supplies
+      entries:
+      - id: CMEntrenchingTool
+        points: 5
+      - id: CMSandbagEmpty50
+        points: 5
+      - id: CMWelderSmall
+        points: 2
+    - name: Explosives
+      entries:
+      - id: CMPacketGrenadeHighExplosiveFilled
+        points: 20
+    - name: Clothing Items
+      entries:
+      - id: CMWebbing
+        amount: 1
+      - id: CMWebbingBrown
+        amount: 1
+      - id: CMWebbingBlack
+        amount: 1
+    - name: Utilities
+      entries:
+      - id: CMFireExtinguisherPortable
+        amount: 10
+    - name: Binoculars
+      entries: [ ]
+    - name: Helmet Optics
+      entries: [ ]
+    - name: Pamphlets
+      entries: [ ]
+    - name: Radio Keys
+      entries:
+      - id: CMEncryptionKeyEngineer
+        amount: 5
+        points: 5
+      - id: CMEncryptionKeyIntel
+        amount: 5
+        points: 5
+      - id: CMEncryptionKeyJTAC
+        amount: 5
+        points: 5
+      - id: CMEncryptionKeyRequisition
+        amount: 5
+        points: 5

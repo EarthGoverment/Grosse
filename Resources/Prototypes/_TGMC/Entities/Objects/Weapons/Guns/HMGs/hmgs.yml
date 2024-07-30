@@ -1,0 +1,59 @@
+- type: entity
+  name: MG-100 Vindicator Minigun
+  parent: BaseItem
+  id: TGMCWeaponMinigun100
+  suffix: Пулемёт
+  description: A six barreled rotary machine gun, The ultimate in man-portable firepower, capable of laying down high velocity armor piercing rounds this thing will no doubt pack a punch.. If you don't kill all your friends with it, you can use the stablizing system of the Powerpack to fire aimed fire, but you'll move incredibly slowly.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/minigun/big.rsi
+    state: icon
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/minigun/tiny.rsi
+    size: Ginormous
+  - type: GunIFF
+  - type: Gun
+    minAngle: 1
+    maxAngle: 30
+    angleDecay: 10
+    angleIncrease: 1.5
+    cameraRecoilScalar: 0.5
+    fireRate: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/LMGs/minigunSG.ogg
+  - type: ClothingSlotAmmoProvider
+    targetSlot: BACK
+    providerWhitelist:
+      tags:
+      - TGMCPowerpackRifle
+  - type: Appearance
+  - type: Wieldable
+  - type: UseDelay
+    delay: 2.3
+  - type: GunRequiresWield
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: GunRequiresSkills
+    skills:
+      smartGun: 1
+  - type: GunSkilledRecoil
+    skills:
+      firearms: 100
+  - type: RMCMagneticItem
+  - type: GunToggleableRecoil
+  - type: GunToggleableAutoFire
+  - type: SmartGun
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-rail: -0.1875, 0.125

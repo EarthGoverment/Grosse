@@ -1,0 +1,187 @@
+- type: entity
+  id: MagazineLightRifleAI
+  noSpawn: true
+  name: "magazine (.30 rifle)"
+  parent: BaseMagazineLightRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessRifle
+    capacity: 1000
+
+- type: entity
+  id: MagazineRifleRocket20
+  name: rifle magazine (рельсотрон)
+  description: Standart EarthGov type of heavy magazines.
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleRocket20
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 40
+    proto: CartridgeRifleRocket20
+    whitelist:
+      tags:
+        - CartridgeRifleRocket20
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Item
+    size: Small
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/v31_mag.rsi
+  - type: Sprite
+    netsync: false
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/v31_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+# Base
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: TGMCMagazineRifleAKMC
+  name: "AKMC magazine (10x24mm)"
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleAKMC
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mm
+    proto: CMCartridgeRifle10x24mm
+    capacity: 40
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/ak_long_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: TGMCMagazineRifleG36
+  name: G-36 magazine (10x24mm)
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleG36
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mm
+    proto: CMCartridgeRifle10x24mm
+    capacity: 45
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/g36_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: TGMCMagazineRifleM28
+  name: M-28 magazine (10x24mm)
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleM28
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mm
+    proto: CMCartridgeRifle10x24mm
+    capacity: 35
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/m16_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+
+# AP
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleAKMCAP
+  name: "AKMC AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleAKMCAP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/AP/ak_long_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleG36AP
+  name: "G36 AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleG36AP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/AP/g36_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: CMMagazineRifleM54C
+  id: TGMCMagazineRifleM28AP
+  name: "M28 AP magazine (10x24mm)"
+  suffix: AP
+  components:
+  - type: Tag
+    tags:
+    - TGMCMagazineRifleM28AP
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CMCartridgeRifle10x24mmAP
+    proto: CMCartridgeRifle10x24mmAP
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Magazines/Rifle/AP/m16_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

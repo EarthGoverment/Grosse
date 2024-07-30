@@ -1,0 +1,105 @@
+﻿- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleAKMCAP
+  name: Box magazine rifle AKMC
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleAKMCAP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleAKMCAP
+
+- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleG36AP
+  name: Box magazine rifle G-36
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleG36AP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleG36AP
+
+- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleM28AP
+  name: Box magazine rifle M-28
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleM28AP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleM28AP
+
+- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleP90AP
+  name: Box magazine SMG P-90
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleP90AP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleP90AP
+
+- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleMP5AP
+  name: Box magazine SMG MP-5
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleMP5AP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleMP5AP
+
+- type: entity
+  parent: CMBoxMagazineRifleM54CEmpty
+  id: TGMCBoxMagazineRifleVectorAP
+  name: Box magazine SMG V-21
+  suffix: Filled
+  components:
+  - type: CMItemSlots
+    startingItem: TGMCMagazineRifleVectorAP
+    count: 10
+    slot:
+      whitelist:
+        tags:
+        - TGMCMagazineRifleVectorAP
+
+- type: entity
+  parent: CMCrateAmmo
+  id: TGMCCrateBoxMagazineRifleAP
+  name: Rifle magazine AP box (3x Box)
+  components:
+  - type: StorageFill
+    contents:
+    - id: TGMCBoxMagazineRifleAKMCAP
+    - id: TGMCBoxMagazineRifleG36AP
+    - id: TGMCBoxMagazineRifleM28AP
+
+- type: entity
+  parent: CMCrateAmmo
+  id: CMCrateBoxMagazineSMGAP
+  name: SMG magazine AP box (3x Box)
+  components:
+  - type: StorageFill
+    contents:
+    - id: TGMCBoxMagazineRifleP90AP
+    - id: TGMCBoxMagazineRifleMP5AP
+    - id: TGMCBoxMagazineRifleVectorAP

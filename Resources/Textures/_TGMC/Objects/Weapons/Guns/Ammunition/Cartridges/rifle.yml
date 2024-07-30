@@ -1,0 +1,36 @@
+- type: entity
+  id: BaseCartridgeRifleRocket20
+  name: cartridge (рельсотрон)
+  parent: BaseCartridge
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeRifleRocket20
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+  - type: Sprite
+    netsync: false
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: 45combat
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  id: CartridgeRifleRocket20
+  name: cartridge (рельсотрон)
+  parent: BaseCartridgeRifleRocket20
+  components:
+  - type: Sprite
+    layers:
+    - state: 45combat
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: SpentAmmoVisuals
+    state: 45combat
+  - type: CartridgeAmmo
+    proto: BulletRocket20

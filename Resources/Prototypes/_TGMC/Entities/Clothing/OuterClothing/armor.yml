@@ -1,23 +1,51 @@
 ﻿# scout
 - type: entity
   parent: CMArmorM3Medium
-  id: TGMCArmorScout
-  name: scout armor
-  description: A standard scout armor.
+  id: TGMCArmorM3Light
+  name: Light armor
+  description: A lighter, cut down version of the standard M3 pattern armor. It sacrifices protection for more speed. Protects more against acid.
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/scout.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/scout.rsi
   - type: CMArmor
-    armor: 20
+    armor: 15
+    bio: 15
     explosionArmor: 20
+  - type: ClothingSpeedModifier
+    walkModifier: .8
+    sprintModifier: .8
+  - type: Storage
+    grid:
+    - 0,0,9,1 # 5 slots
 
 - type: entity
   parent: CMArmorM3Medium
-  id: TGMCArmorGrenadier
-  name: grenadier armor
-  description: A standard grenadier armor.
+  id: TGMCArmorM3Medium
+  name: Medium marine armor
+  description: A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/demolitionist.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/demolitionist.rsi
+  - type: CMArmor
+    armor: 20
+    bio: 20
+    explosionArmor: 20
+  - type: ClothingSpeedModifier
+    walkModifier: .7
+    sprintModifier: .7
+  - type: Storage
+    grid:
+    - 0,0,9,1 # 5 slots
+
+- type: entity
+  parent: CMArmorM3Medium
+  id: TGMCArmorM3Heavy
+  name: Heavy armor
+  description: A heavier version of the standard M3 pattern armor, the armor is primarily designed to withstand ballistic, explosive, and internal damage, with the drawback of increased bulk and thus reduced movement speed, alongside little additional protection from standard blunt force impacts and biological threats.
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/grenadier.rsi
@@ -25,24 +53,50 @@
     sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/grenadier.rsi
   - type: CMArmor
     armor: 25
-    explosionArmor: 20
+    bio: 25
+    explosionArmor: 30
+  - type: WieldSlowdownCompensation
+    walk: 0.12
+    sprint: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
-    
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: Storage
+    grid:
+    - 0,0,9,1 # 5 slots
+
 - type: entity
   parent: CMArmorM3Medium
-  id: TGMCArmorDemolitionist
-  name: demolitionist armor
-  description: A standard demolitionist armor.
+  id: TGMCArmorM4
+  name: M4 pattern marine armor
+  description: A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches.
   components:
   - type: Sprite
-    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/demolitionist.rsi
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate3.rsi
   - type: Clothing
-    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/demolitionist.rsi
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate3.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,9,1 # 5 slots
   - type: CMArmor
     armor: 20
-    explosionArmor: 20
+    bio: 25
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: .8
+    sprintModifier: .8
+
+- type: entity
+  parent: CMArmorM3Medium
+  id: TGMCArmorB12
+  name: B12 pattern marine armor
+  description: A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight.
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate2.rsi
+  - type: Clothing
+    sprite: _TGMC/Objects/Clothing/OuterClothing/Armor/chestplate2.rsi
+  - type: CMArmor
+    armor: 25
+    bio: 25
+    explosionArmor: 20

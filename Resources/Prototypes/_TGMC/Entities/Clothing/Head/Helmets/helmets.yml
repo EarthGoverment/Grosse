@@ -1,18 +1,18 @@
 # m10
 - type: entity
   parent: ClothingHeadBase
-  id: TGMCArmorHelmetScout
-  name: scout helmet
-  description: A standard scout Helmet.
+  id: TGMCArmorHelmetLight
+  name: Light helmet
+  description: A standard Light Pattern Helmet. The inside label, along with washing information, reads, 'The difference between an open-casket and closed-casket funeral. Wear on head for best results.'. There is a built-in camera on the right side.
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Clothing/Head/Helmets/scout.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/scout.rsi
   - type: Storage
-    maxItemSize: Small
+    maxItemSize: Tiny
     grid:
-    - 0,0,2,1
+    - 0,0,3,1
     blacklist:
       tags:
       - Pouch
@@ -27,26 +27,54 @@
   - type: CMArmor
     armor: 20
     explosionArmor: 10
+  - type: CMHardArmor
+  - type: RMCNameItemOnVend
+    item: Helmet
+  - type: RMCBulkyArmor
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+  - type: IgnoreContentsSize
+    items:
+      components:
+      - RMCLighter
+      - RMCFlask
+      - CMScalpel
+      - Figurine
+      tags:
+      - Cigarette
+      - Slice
+      - Pen
+      - Crayon
+      - Flashlight
+      - Brutepack
+      - CMOintment
+      - CMAutoInjector
+      - PillPacket
+  - type: FixedItemSizeStorage
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 - type: entity
-  parent: TGMCArmorHelmetScout
-  id: TGMCArmorHelmetGrenadier
-  name: grenadier helmet
+  parent: TGMCArmorHelmetLight
+  id: TGMCArmorHelmetMedium
+  name: Medium helmet
   description: A standard grenadier Helmet.
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Clothing/Head/Helmets/grenadier.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/grenadier.rsi
-    
+
 - type: entity
-  parent: TGMCArmorHelmetScout
+  parent: TGMCArmorHelmetLight
   id: TGMCArmorHelmetDemolitionist
-  name: demolitionist helmet
+  name: Heavy helmet
   description: A standard demolitionist Helmet.
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Clothing/Head/Helmets/demolitionist.rsi
   - type: Clothing
     sprite: _TGMC/Objects/Clothing/Head/Helmets/demolitionist.rsi
-

@@ -1,0 +1,268 @@
+- type: entity
+  parent: CMBaseWeaponSMG
+  name: V-21
+  id: TGMCWeaponSMGVector
+  description: The V-21
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/vector/big.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/vector/tiny.rsi
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/vector/tiny.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/SMGs/vector_fire.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    recoilWielded: 0.9
+    recoilUnwielded: 0.9
+    scatterWielded: 12
+    scatterUnwielded: 12
+    baseFireRate: 6.6
+    burstScatterMult: 4
+    modifiers:
+      Burst:
+        fireDelay: 0.0999
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        maxScatterModifier: 3
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 4
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TGMCMagazineTopSubMachineGunVector
+        insertSound: /Audio/_TGMC/Weapons/Guns64/SMGs/smg_reload.ogg
+        ejectSound: /Audio/_TGMC/Weapons/Guns64/SMGs/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - TGMCMagazineTopSubMachineGunVector
+            - TGMCMagazineRifleVectorAP
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.700, 0.100
+      rmc-aslot-rail: 0.032, 0.155
+      rmc-aslot-stock: -0.81, 0.032
+      rmc-aslot-underbarrel: 0.25, -0.25
+
+- type: entity
+  parent: CMBaseWeaponSMG
+  name: MP-5
+  id: TGMCWeaponSMGMP5
+  description: The MP5
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/mp5/big.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/mp5/tiny.rsi
+  - type: Item
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/mp5/tiny.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/SMGs/mp5.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    recoilWielded: 1.1
+    recoilUnwielded: 1.1
+    scatterWielded: 15
+    scatterUnwielded: 15
+    baseFireRate: 7.2
+    burstScatterMult: 4
+    modifiers:
+      Burst:
+        fireDelay: 0.0999
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        maxScatterModifier: 3
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 4
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TGMCMagazineTopSubMachineGunMP5
+        insertSound: /Audio/_TGMC/Weapons/Guns64/SMGs/mp5_reload.ogg
+        ejectSound: /Audio/_TGMC/Weapons/Guns64/SMGs/mp5_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - TGMCMagazineTopSubMachineGunMP5
+            - TGMCMagazineRifleMP5AP
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.700, 0.100
+      rmc-aslot-rail: 0.032, 0.155
+      rmc-aslot-stock: -0.81, 0.032
+      rmc-aslot-underbarrel: 0.25, -0.25
+
+- type: entity
+  parent: CMBaseWeaponSMG
+  name: P-90
+  id: TGMCWeaponSMGP90
+  description: The P-90
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/p90.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/p90.rsi
+  - type: Gun
+    shotsPerBurst: 4
+    soundGunshot:
+      path: /Audio/_TGMC/Weapons/Guns64/SMGs/p90.ogg
+  - type: RMCSelectiveFire
+    baseFireModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    recoilWielded: 1.3
+    recoilUnwielded: 1.3
+    scatterWielded: 17
+    scatterUnwielded: 17
+    baseFireRate: 8
+    burstScatterMult: 4
+    modifiers:
+      Burst:
+        fireDelay: 0.0999
+        maxScatterModifier: 10
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 6
+      FullAuto:
+        maxScatterModifier: 3
+        useBurstScatterMult: true
+        unwieldedScatterMultiplier: 2
+        shotsToMaxScatter: 4
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: TGMCMagazineTopSubMachineGunP90
+        insertSound: /Audio/_TGMC/Weapons/Guns64/SMGs/smg_reload.ogg
+        ejectSound: /Audio/_TGMC/Weapons/Guns64/SMGs/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - TGMCMagazineTopSubMachineGunP90
+            - TGMCMagazineRifleP90AP
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentAngledGrip
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentGyroscopicStabilizer
+          - RMCAttachmentLaserSight
+          - RMCAttachmentVerticalGrip
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.700, 0.100
+      rmc-aslot-rail: 0.032, 0.155
+      rmc-aslot-stock: -0.81, 0.032
+      rmc-aslot-underbarrel: 0.25, -0.25

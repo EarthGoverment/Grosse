@@ -1156,39 +1156,6 @@ entities:
     - type: Transform
       pos: 33.5,-26.5
       parent: 1
-- proto: CMBoxShotgunBuckshot
-  entities:
-  - uid: 10539
-    components:
-    - type: Transform
-      pos: 94.5,-36.5
-      parent: 1
-- proto: CMBoxShotgunFlechette
-  entities:
-  - uid: 10538
-    components:
-    - type: Transform
-      pos: 93.5,-39.5
-      parent: 1
-- proto: CMBoxShotgunIncendiaryBuckshot
-  entities:
-  - uid: 10536
-    components:
-    - type: Transform
-      pos: 91.5,-39.5
-      parent: 1
-  - uid: 10544
-    components:
-    - type: Transform
-      pos: 92.5,-41.5
-      parent: 1
-- proto: CMBoxShotgunSlugs
-  entities:
-  - uid: 10537
-    components:
-    - type: Transform
-      pos: 90.5,-38.5
-      parent: 1
 - proto: CMBoxSterileMask
   entities:
   - uid: 10535
@@ -10202,6 +10169,13 @@ entities:
     - type: Transform
       pos: 49.5,-83.5
       parent: 1
+- proto: CrewMonitoringServer
+  entities:
+  - uid: 11206
+    components:
+    - type: Transform
+      pos: 126.5,-2.5
+      parent: 1
 - proto: CryoPod
   entities:
   - uid: 10517
@@ -10914,15 +10888,72 @@ entities:
     - type: Transform
       pos: 87.5,-85.5
       parent: 1
-  - uid: 10889
-    components:
-    - type: Transform
-      pos: 94.5,-101.5
-      parent: 1
   - uid: 10948
     components:
     - type: Transform
       pos: 93.5,-88.5
+      parent: 1
+- proto: RMCSmallFloodlight
+  entities:
+  - uid: 11211
+    components:
+    - type: Transform
+      pos: 117.5,-57.5
+      parent: 1
+  - uid: 11212
+    components:
+    - type: Transform
+      pos: 127.5,-57.5
+      parent: 1
+  - uid: 11213
+    components:
+    - type: Transform
+      pos: 114.5,-69.5
+      parent: 1
+  - uid: 11214
+    components:
+    - type: Transform
+      pos: 129.5,-69.5
+      parent: 1
+  - uid: 11215
+    components:
+    - type: Transform
+      pos: 126.5,-81.5
+      parent: 1
+  - uid: 11216
+    components:
+    - type: Transform
+      pos: 118.5,-81.5
+      parent: 1
+  - uid: 11217
+    components:
+    - type: Transform
+      pos: 26.5,-92.5
+      parent: 1
+  - uid: 11218
+    components:
+    - type: Transform
+      pos: 16.5,-92.5
+      parent: 1
+  - uid: 11219
+    components:
+    - type: Transform
+      pos: 13.5,-79.5
+      parent: 1
+  - uid: 11220
+    components:
+    - type: Transform
+      pos: 29.5,-79.5
+      parent: 1
+  - uid: 11221
+    components:
+    - type: Transform
+      pos: 26.5,-66.5
+      parent: 1
+  - uid: 11222
+    components:
+    - type: Transform
+      pos: 16.5,-66.5
       parent: 1
 - proto: RMCSpawnerRandomTools
   entities:
@@ -10986,6 +11017,38 @@ entities:
     - type: Transform
       pos: 108.5,-83.5
       parent: 1
+- proto: RMCTallFloodlight
+  entities:
+  - uid: 11207
+    components:
+    - type: Transform
+      pos: 115.5,-77.5
+      parent: 1
+  - uid: 11208
+    components:
+    - type: Transform
+      pos: 129.5,-77.5
+      parent: 1
+  - uid: 11209
+    components:
+    - type: Transform
+      pos: 129.5,-61.5
+      parent: 1
+  - uid: 11210
+    components:
+    - type: Transform
+      pos: 114.5,-60.5
+      parent: 1
+  - uid: 11223
+    components:
+    - type: Transform
+      pos: 29.5,-83.5
+      parent: 1
+  - uid: 11224
+    components:
+    - type: Transform
+      pos: 30.5,-72.5
+      parent: 1
 - proto: SubstationWallBasic
   entities:
   - uid: 10697
@@ -10999,6 +11062,45 @@ entities:
     components:
     - type: Transform
       pos: 81.5,-33.5
+      parent: 1
+- proto: TGMCBoxShotgunBuckshot
+  entities:
+  - uid: 10537
+    components:
+    - type: Transform
+      pos: 93.5,-39.5
+      parent: 1
+  - uid: 10538
+    components:
+    - type: Transform
+      pos: 90.5,-37.5
+      parent: 1
+  - uid: 10540
+    components:
+    - type: Transform
+      pos: 92.5,-41.5
+      parent: 1
+- proto: TGMCC4
+  entities:
+  - uid: 10539
+    components:
+    - type: Transform
+      pos: 96.5,-38.5
+      parent: 1
+  - uid: 11225
+    components:
+    - type: Transform
+      pos: 82.5,-37.5
+      parent: 1
+  - uid: 11226
+    components:
+    - type: Transform
+      pos: 32.5,-36.5
+      parent: 1
+  - uid: 11227
+    components:
+    - type: Transform
+      pos: 94.5,-101.5
       parent: 1
 - proto: TGMCClothingNeckOfficerCloak
   entities:
@@ -12351,6 +12453,66 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 132.5,-82.5
+      parent: 1
+- proto: TGMCMagazineRifleAKMC
+  entities:
+  - uid: 11228
+    components:
+    - type: Transform
+      pos: 93.5,-36.5
+      parent: 1
+  - uid: 11229
+    components:
+    - type: Transform
+      pos: 93.5,-36.5
+      parent: 1
+- proto: TGMCMagazineRifleM28
+  entities:
+  - uid: 11230
+    components:
+    - type: Transform
+      pos: 91.5,-39.5
+      parent: 1
+  - uid: 11231
+    components:
+    - type: Transform
+      pos: 91.5,-39.5
+      parent: 1
+- proto: TGMCMagazineTopSubMachineGunMP5
+  entities:
+  - uid: 10594
+    components:
+    - type: Transform
+      pos: 92.5,-36.5
+      parent: 1
+  - uid: 11204
+    components:
+    - type: Transform
+      pos: 92.5,-36.5
+      parent: 1
+- proto: TGMCMagazineTopSubMachineGunP90
+  entities:
+  - uid: 10591
+    components:
+    - type: Transform
+      pos: 90.5,-38.5
+      parent: 1
+  - uid: 10593
+    components:
+    - type: Transform
+      pos: 90.5,-38.5
+      parent: 1
+- proto: TGMCMagazineTopSubMachineGunVector
+  entities:
+  - uid: 10596
+    components:
+    - type: Transform
+      pos: 95.5,-36.5
+      parent: 1
+  - uid: 10889
+    components:
+    - type: Transform
+      pos: 95.5,-36.5
       parent: 1
 - proto: TGMCRedWall
   entities:
@@ -56823,10 +56985,57 @@ entities:
       parent: 1
 - proto: TGMCRubberPip
   entities:
-  - uid: 11204
+  - uid: 10542
     components:
     - type: Transform
-      pos: 126.5,-2.5
+      pos: 126.5,-1.5
+      parent: 1
+  - uid: 11232
+    components:
+    - type: Transform
+      pos: 94.5,-39.5
+      parent: 1
+- proto: TGMCWeaponRifleAKMC
+  entities:
+  - uid: 10541
+    components:
+    - type: Transform
+      pos: 93.5,-36.5
+      parent: 1
+- proto: TGMCWeaponRifleM28
+  entities:
+  - uid: 10543
+    components:
+    - type: Transform
+      pos: 91.5,-39.5
+      parent: 1
+- proto: TGMCWeaponShotgunXM1014
+  entities:
+  - uid: 10536
+    components:
+    - type: Transform
+      pos: 93.5,-39.5
+      parent: 1
+- proto: TGMCWeaponSMGMP5
+  entities:
+  - uid: 10544
+    components:
+    - type: Transform
+      pos: 92.5,-36.5
+      parent: 1
+- proto: TGMCWeaponSMGP90
+  entities:
+  - uid: 10595
+    components:
+    - type: Transform
+      pos: 90.5,-38.5
+      parent: 1
+- proto: TGMCWeaponSMGVector
+  entities:
+  - uid: 10592
+    components:
+    - type: Transform
+      pos: 95.5,-36.5
       parent: 1
 - proto: ToyNuke
   entities:
@@ -57202,64 +57411,6 @@ entities:
     components:
     - type: Transform
       pos: 103.5,-65.5
-      parent: 1
-- proto: WeaponRevolverInspector
-  entities:
-  - uid: 10592
-    components:
-    - type: Transform
-      pos: 93.5,-36.5
-      parent: 1
-  - uid: 10593
-    components:
-    - type: Transform
-      pos: 92.5,-36.5
-      parent: 1
-- proto: WeaponRevolverMateba
-  entities:
-  - uid: 10591
-    components:
-    - type: Transform
-      pos: 94.5,-39.5
-      parent: 1
-- proto: WeaponRevolverPython
-  entities:
-  - uid: 10594
-    components:
-    - type: Transform
-      pos: 92.5,-39.5
-      parent: 1
-  - uid: 10595
-    components:
-    - type: Transform
-      pos: 95.5,-36.5
-      parent: 1
-  - uid: 10596
-    components:
-    - type: Transform
-      pos: 90.5,-39.5
-      parent: 1
-- proto: WeaponShotgunM42A2
-  entities:
-  - uid: 10540
-    components:
-    - type: Transform
-      pos: 94.5,-36.5
-      parent: 1
-  - uid: 10541
-    components:
-    - type: Transform
-      pos: 93.5,-39.5
-      parent: 1
-  - uid: 10542
-    components:
-    - type: Transform
-      pos: 91.5,-39.5
-      parent: 1
-  - uid: 10543
-    components:
-    - type: Transform
-      pos: 90.5,-38.5
       parent: 1
 - proto: XenoWeedsSource
   entities:

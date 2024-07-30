@@ -1,0 +1,11 @@
+#- type: entity
+#  id: CMCrateM54C
+#  parent: CMCrateWeapons
+#  name: M54C MK1 Rifle Crate (x2 MK2, x2 magazines)
+#  components:
+#  - type: StorageFill
+#    contents:
+#      - id: WeaponRifleM54C
+#        amount: 2
+#      - id: CMMagazineRifleM54C
+#        amount: 2

@@ -8,6 +8,79 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Rifle
+      entries:
+      - id: TGMCWeaponRifleAKMC
+        amount: 15
+      - id: TGMCWeaponRifleM28
+        amount: 15
+    - name: SMG
+      entries:
+      - id: TGMCWeaponSMGVector
+        amount: 15
+      - id: TGMCWeaponSMGMP5
+        amount: 15
+      - id: TGMCWeaponSMGP90
+        amount: 15
+    - name: Shotgun
+      entries:
+      - id: TGMCWeaponShotgunXM1014
+        amount: 15
+    - name: Buckshot
+      entries:
+      - id: TGMCBoxShotgunBuckshot
+        amount: 25
+    - name: SMGs
+      entries:
+      - id: TGMCMagazineTopSubMachineGunVector
+        amount: 30
+      - id: TGMCMagazineTopSubMachineGunMP5
+        amount: 30
+      - id: TGMCMagazineTopSubMachineGunP90
+        amount: 30
+    - name: Rifle
+      entries:
+      - id: TGMCMagazineRifleAKMC
+        amount: 30
+      - id: TGMCMagazineRifleM28
+        amount: 30
+    - name: Sidearms
+      entries:
+      - id: CMWeaponPistolM77
+        amount: 15
+      - id: RMCWeaponRevolverM44
+        amount: 15
+      - id: CMWeaponPistolM1984
+        amount: 15
+    - name: Sidearm ammunition
+      entries:
+      - id: CMMagazinePistolM77AP
+        amount: 30
+      - id: RMCSpeedLoaderM44
+        amount: 30
+      - id: CMMagazinePistolM1984
+        amount: 30
+    - name: Attachments
+      entries:
+      - id: RMCAttachmentM63StockCollapsible
+        amount: 10
+      - id: RMCAttachmentRailFlashlight
+        amount: 25
+        recommended: true
+      - id: RMCAttachmentFlashlightGrip
+        amount: 10
+        recommended: true
+      - id: RMCAttachmentU1GrenadeLauncher
+        amount: 25
+    - name: Utilities
+      entries:
+      - id: RMCM5Bayonet
+        amount: 25
+      - id: CMPackFlare
+        amount: 10
+        recommended: true
 
 - type: entity
   parent: ColMarTechSurplus
@@ -20,6 +93,136 @@
     - [ "CMAccessMarinePrep" ]
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Standard Equipment
+      entries:
+      - id: CMBootsBlack
+        amount: 15
+      - id: CMBootsBrown
+        amount: 15
+      - id: JumpsuitMarine
+        amount: 15
+      - id: CMHandsBrown
+        amount: 15
+      - id: CMHandsBlackMarine
+        amount: 15
+      - id: CMHeadset
+        amount: 15
+    - name: Webbings
+      entries:
+      - id: CMWebbingBrown
+        amount: 1
+      - id: CMWebbingBlack
+        amount: 1
+      - id: CMWebbing
+        amount: 2
+    - name: Armor
+      entries:
+      - id: TGMCArmorM3Light
+        amount: 10
+      - id: TGMCArmorM3Medium
+        amount: 10
+      - id: TGMCArmorM3Heavy
+        amount: 10
+    - name: Helmets
+      entries:
+      - id: TGMCArmorHelmetLight
+        amount: 10
+      - id: TGMCArmorHelmetMedium
+        amount: 10
+      - id: TGMCArmorHelmetDemolitionist
+        amount: 10
+    - name: Backpack
+      entries:
+      - id: CMBackpackMarine
+        amount: 15
+      - id: CMBackpackMarineTech
+        amount: 15
+      - id: CMBackpackMedical
+        amount: 15
+      - id: CMSatchelMarine
+        amount: 15
+      - id: CMSatchelMarineTech
+        amount: 15
+      - id: RMCSatchelWelderChestrig
+        amount: 15
+      - id: CMSatchelMedical
+        amount: 15
+    - name: Restricted Backpacks
+      entries:
+      - id: CMBackpackWelder
+        amount: 1
+      - id: RMCSatchelWelder
+        amount: 2
+    - name: Belts
+      entries:
+      - id: CMBeltMarine
+        amount: 15
+      - id: RMCBeltGrenade
+        amount: 10
+      - id: CMBeltKnifeFilled
+        name: M276 Knife Rig (Full)
+        amount: 15
+    - name: Pouches
+      entries:
+      - id: CMPouchBayonet
+        name: Bayonet Sheath (Full)
+        amount: 15
+      - id: CMPouchFirstAidSplintsGauzeOintment
+        name: First-Aid Pouch (Splints, Gauze, Ointment)
+        amount: 15
+      - id: CMPouchFirstAidPills
+        name: First-Aid Pouch (Pill Packets)
+        amount: 15
+      - id: CMPouchFlareFilled
+        name: Flare Pouch (Full)
+        amount: 15
+      - id: CMPouchDocumentSmall
+        amount: 15
+      - id: CMPouchMagazine
+        amount: 15
+      - id: CMPouchShotgun
+        amount: 15
+      - id: CMPouchGeneralMedium
+        amount: 15
+      - id: CMPouchMagazinePistol
+        amount: 15
+      - id: CMPouchPistol
+        amount: 15
+    - name: Restricted Pouches
+      entries:
+      - id: CMPouchConstruction
+        amount: 1
+      - id: CMPouchExplosive
+        amount: 1
+      - id: CMPouchFirstResponder
+        name: First Responder Pouch (Empty)
+        amount: 2
+      - id: CMPouchMagazinePistolLarge
+        amount: 2
+      - id: CMPouchTools
+        amount: 1
+    - name: Mask
+      entries:
+      - id: CMMaskGas
+        amount: 15
+      - id: CMMaskCoif
+        amount: 10
+    - name: Miscellaneous
+      entries:
+      - id: RMCGogglesBallistic
+        amount: 10
+      - id: RMCGogglesM1A1Ballistic
+        amount: 10
+      - id: RMCGogglesPrescriptionBallistic
+        amount: 10
+      - id: RMCGlassesMarineRpg
+        amount: 10
+      - id: BedrollFolded
+        amount: 20
+    - name: Optics
+      entries: [ ]
 
 - type: entity
   parent: ColMarTechMunitions
@@ -29,3 +232,21 @@
   components:
   - type: Sprite
     sprite: _TGMC/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
+  - type: CMAutomatedVendor
+    sections:
+    - name: Special Ammunition
+      entries:
+      - id: RMCSpeedLoader44Marksman
+        amount: 10
+      - id: TGMCMagazineRifleAKMCAP
+        points: 2
+      - id: TGMCMagazineRifleM28AP
+        points: 2
+      - id: TGMCMagazineRifleG36AP
+        points: 2
+      - id: TGMCMagazineRifleVectorAP
+        points: 2
+      - id: TGMCMagazineRifleMP5AP
+        points: 2
+      - id: TGMCMagazineRifleP90AP
+        points: 2

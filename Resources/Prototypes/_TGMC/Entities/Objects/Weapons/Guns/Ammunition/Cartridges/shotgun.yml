@@ -1,0 +1,28 @@
+- type: entity
+  parent: CMPelletShotgunBase
+  id: TGMCPelletShotgunBuckshot
+  name: buckshot
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+      - state: practice
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 40
+
+- type: entity
+  id: TGMCShellShotgunMagnum12
+  name: shell (.12 gauge magnum)
+  parent: CMShellShotgunBase
+  components:
+  - type: Sprite
+    sprite: _TGMC/Objects/Weapons/Gunsx64/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: TGMCPelletShotgunBuckshot
+    count: 4
+    spread: 20

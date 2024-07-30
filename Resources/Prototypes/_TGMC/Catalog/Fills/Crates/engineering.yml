@@ -1,0 +1,9 @@
+- type: entity
+  id: TGMCCrateC4
+  parent: CMCrateConstruction
+  name: C4
+  components:
+  - type: StorageFill
+    contents:
+      - id: TGMCC4
+        amount: 5
