@@ -850,6 +850,8 @@
     state: "84"
   - type: Icon
     state: "84"
+  - type: Occluder
+    enabled: false
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall85]
@@ -860,6 +862,8 @@
     state: "85"
   - type: Icon
     state: "85"
+  - type: Occluder
+    enabled: false
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall86]
@@ -910,6 +914,8 @@
     state: "90"
   - type: Icon
     state: "90"
+  - type: Occluder
+    enabled: false
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall91]
@@ -920,6 +926,8 @@
     state: "91"
   - type: Icon
     state: "91"
+  - type: Occluder
+    enabled: false
 
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall92]

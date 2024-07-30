@@ -1,0 +1,82 @@
+- type: entity
+  parent: [ CMBaseStructureCorrodible, TGMCCargoCatalog ]
+  id: TGMCASRSConsole
+  name: ASRS console
+  description: A console for the Automated Storage Retrieval System.
+  suffix: Requisitions
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/asrs_console.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: off
+    - map: ["computerLayerScreen"]
+      state: on
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.35,0.25,0.35"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: CargoOrderConsole
+  - type: ActivatableUI
+    key: enum.RequisitionsUIKey.Key
+  - type: ActivatableUIRequiresAccess
+  - type: AccessReader
+    access: [ [ "CMAccessRequisitions" ] ]
+  - type: UserInterface
+    interfaces:
+      enum.RequisitionsUIKey.Key:
+        type: RequisitionsBui
+  - type: Computer
+    board: CargoRequestComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+    - OrderSender
+  - type: GuideHelp
+    guides:
+    - Cargo
+  - type: CargoSellBlacklist
+  - type: ApcPowerReceiver
+    powerLoad: 0
+    needsPower: false
+  - type: Appearance
+  - type: LitOnPowered
+  - type: EmitSoundOnUIOpen
+    sound:
+      collection: Keyboard
+      params:
+        volume: -1
+  - type: RequireProjectileTarget
+  - type: InteractionOutline
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+        ents: []
+  - type: Corrodible
+    isCorrodible: false
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno

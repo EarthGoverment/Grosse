@@ -1,0 +1,102 @@
+﻿- type: entity # TODO RMC14 split these into per file categories and inherit all to ASRS
+  abstract: true
+  id: TGMCCargoCatalog
+  components:
+  - type: Speech
+    speechVerb: Robotic
+  - type: RequisitionsComputer
+    categories:
+    - name: Ammo
+      entries:
+      - cost: 6000
+        crate: TGMCCrateBoxMagazineRifleAP
+      - cost: 6000
+        crate: CMCrateBoxMagazineSMGAP
+    - name: Attachments
+      entries:
+      - cost: 3000
+        crate: CMCrateAttachmentSmartScope
+      - cost: 2000
+        crate: CMCrateAttachmentRailFlashlight
+      - cost: 3000
+        crate: CMCrateAttachmentSuppressor
+      - cost: 3000
+        crate: CMCrateAttachmentExtendedBarrel
+      - cost: 3000
+        crate: CMCrateAttachmentCompensator
+      - cost: 3000
+        crate: CMCrateAttachmentUnderbarrelShotgun
+    - name: Clothing
+      entries:
+      - cost: 2000
+        crate: CMCrateClothingLargePouches
+      - cost: 2000
+        crate: CMCrateClothingMedicalPouches
+      - cost: 2000
+        crate: CMCrateClothingWebbing
+    - name: Engineering
+      entries:
+      - cost: 2000
+        crate: CMCrateEmptySandbags
+      - cost: 3000
+        crate: CMCrateSandbagsConstructionKit
+      - cost: 2000
+        crate: CMCrateMetalSheets
+      - cost: 3000
+        crate: CMCratePlasteelSheets
+      - cost: 2000
+        crate: CMCrateGlassSheets
+      - cost: 2000
+        crate: CMCrateElectricalMaintenance
+      - cost: 2000
+        crate: CMCrateMechanicalMaintenance
+      - cost: 2000
+        crate: CMCrateReplacementLights
+      - cost: 3000
+        crate: CMCratePacmanParts
+      - cost: 4000
+        crate: CMCrateSuperPacmanParts
+      - cost: 1000
+        crate: CMCrateFlashlights
+      - cost: 1000
+        crate: CMCrateHighCapacityPowerCell
+    - name: Explosives
+      entries:
+      - cost: 3000
+        crate: CMCrateGrenadesHighExplosive
+      - cost: 3000
+        crate: CMCrateGrenadesFrag
+      - cost: 2000
+        crate: TGMCCrateC4
+    - name: Medical
+      entries:
+      - cost: 3200
+        crate: CMCrateMedicalSurgery
+      - cost: 2000
+        crate: CMCrateMedicalBodyBag
+      - cost: 1200
+        crate: CMCrateMedicalStasisBag
+      - cost: 1600
+        crate: CMCrateMedicalFirstAid
+      - cost: 2100
+        crate: CMCrateMedicalFilled
+      - cost: 2100
+        crate: CMCrateMedicalPill
+    - name: Research
+      entries:
+      - cost: 3000
+        crate: RMCCrateResearchPhoron
+    - name: Supplies
+      entries:
+      - cost: 2000
+        crate: CMCrateSupplyInternals
+      - cost: 1000
+        crate: CMCrateSuppliesBoxes
+      - cost: 1000
+        crate: CMCrateSupplyJanitor
+      - cost: 2000
+        crate: CMCrateSuppliesCrayons
+#    - name: Weapons
+#      entries:
+#      - cost: 10000
+#        crate: TGMCMinigun

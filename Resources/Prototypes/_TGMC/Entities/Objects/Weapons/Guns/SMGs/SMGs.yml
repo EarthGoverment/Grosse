@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseWeaponSMG
-  name: Vector
+  name: V-21
   id: TGMCWeaponSMGVector
-  description: The Vector
+  description: The V-21
   components:
   - type: Sprite
     sprite: _TGMC/Objects/Weapons/Gunsx64/SMGs/vector/big.rsi

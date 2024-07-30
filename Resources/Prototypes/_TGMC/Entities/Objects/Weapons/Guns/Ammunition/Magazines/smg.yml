@@ -69,7 +69,7 @@
 
 - type: entity
   id: TGMCMagazineTopSubMachineGunVector
-  name: Vector magazine (10x20mm)
+  name: V-21 magazine (10x20mm)
   parent: CMMagazineSMGM63
   components:
   - type: Tag
@@ -155,7 +155,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: TGMCMagazineRifleVectorAP
-  name: "Vector AP magazine (10x24mm)"
+  name: "V-21 AP magazine (10x24mm)"
   suffix: AP
   components:
   - type: Tag

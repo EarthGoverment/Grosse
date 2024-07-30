@@ -92,12 +92,15 @@
     - name: Clothing Items
       entries:
       - id: CMWebbing
+        amount: 1
       - id: CMWebbingBrown
+        amount: 1
       - id: CMWebbingBlack
+        amount: 1
     - name: Utilities
       entries:
       - id: CMFireExtinguisherPortable
-      - id: RMCWhistle
+        amount: 10
     - name: Binoculars
       entries: [ ]
     - name: Helmet Optics

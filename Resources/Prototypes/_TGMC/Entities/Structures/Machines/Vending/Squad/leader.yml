@@ -38,7 +38,7 @@
       - id: TGMCMagazineRifleG36
         points: 1
       - id: TGMCMagazineRifleG36AP
-        points: 1
+        points: 2
     - name: Armors
       entries:
       - id: TGMCArmorM4

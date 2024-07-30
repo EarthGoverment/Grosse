@@ -185,3 +185,174 @@
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: CMMaskSterile
+
+- type: entity
+  parent: ColMarTechBase
+  id: TerraGovTechMarineMedical
+  name: TerraGovTech MarineMed
+  description: Medical Pharmaceutical dispenser with basic medical supplies for marines.
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.38,-0.5,0.35,0.5"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/marine_medical.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "normal"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+  - type: CMSolutionRefiller
+    current: 600
+    max: 600
+    recharge: 125
+    rechargeCooldown: 4
+    reagents:
+    - CMBicaridine
+    - CMKelotane
+    - CMDylovene
+    - CMDexalin
+    - CMDexalinPlus
+    - CMTricordrazine
+    - CMEpinephrine
+    - CMInaprovaline
+    whitelist:
+      components:
+      - Hypospray
+      tags:
+      - Bottle
+  - type: CMAutomatedVendor
+    sections:
+    - name: Field supplies
+      entries:
+      - id: CMBurnKit10
+        amount: 6
+      - id: CMTraumaKit10
+        amount: 6
+      - id: CMOintment10
+        amount: 6
+      - id: CMGauze10
+        amount: 6
+    - name: Autoinjectors
+      entries:
+      - id: CMBicaridineAutoInjector
+        amount: 6
+      - id: CMDexalinPlusAutoInjector
+        amount: 6
+      - id: CMEpinephrineAutoInjector
+        amount: 6
+      - id: CMInaprovalineAutoInjector
+        amount: 6
+      - id: CMKelotaneAutoInjector
+        amount: 6
+      - id: CMTricordrazineAutoInjector
+        amount: 6
+    - name: Liquid bottles
+      entries:
+      - id: CMBottleBicaridine
+        amount: 6
+      - id: CMBottleDylovene
+        amount: 6
+      - id: CMBottleDexalin
+        amount: 6
+      - id: CMBottleInaprovaline
+        amount: 6
+      - id: CMBottleKelotane
+        amount: 6
+    - name: Pill bottles
+      entries:
+      - id: CMPillCanisterBicaridine
+        amount: 6
+      - id: CMPillCanisterDexalin
+        amount: 6
+      - id: CMPillCanisterDylovene
+        amount: 6
+      - id: CMPillCanisterInaprovaline
+        amount: 6
+      - id: CMPillCanisterKelotane
+        amount: 6
+      - id: CMPillCanisterTricordrazine
+        amount: 6
+
+- type: entity
+  parent: ColMarTechBase
+  id: TerraGovTechMarineMedicalPlus
+  name: TerraGovTech MarineMed Plus
+  description: Medical Pharmaceutical dispenser with basic medical supplies for marines.
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.38,-0.5,0.35,0.5"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/marine_medical.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "normal"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+  - type: AccessReader
+    access: [["CMAccessMedical"]]
+  - type: CMSolutionRefiller
+    current: 600
+    max: 600
+    recharge: 125 # TODO RMC14 auto-restock items as well if round is >= 20 minutes in
+    rechargeCooldown: 4
+    reagents:
+    - CMBicaridine
+    - CMKelotane
+    - CMDylovene
+    - CMDexalin
+    - CMDexalinPlus
+    - CMTricordrazine
+    - CMEpinephrine
+    - CMInaprovaline
+    whitelist:
+      components:
+      - Hypospray
+  - type: CMAutomatedVendor
+    sections:
+    - name: Field supplies
+      entries:
+      - id: CMBurnKit10
+      - id: CMTraumaKit10
+      - id: CMOintment10
+      - id: CMGauze10
+    - name: Autoinjectors
+      entries:
+      - id: CMBicaridineAutoInjector
+      - id: CMDexalinPlusAutoInjector
+      - id: CMEpinephrineAutoInjector
+      - id: CMInaprovalineAutoInjector
+      - id: CMKelotaneAutoInjector
+      - id: CMTricordrazineAutoInjector
+    - name: Liquid bottles
+      entries:
+      - id: CMBottleBicaridine
+      - id: CMBottleDylovene
+      - id: CMBottleDexalin
+      - id: CMBottleInaprovaline
+      - id: CMBottleKelotane
+    - name: Pill bottles
+      entries:
+      - id: CMPillCanisterBicaridine
+      - id: CMPillCanisterDexalin
+      - id: CMPillCanisterDylovene
+      - id: CMPillCanisterInaprovaline
+      - id: CMPillCanisterKelotane
+      - id: CMPillCanisterTricordrazine

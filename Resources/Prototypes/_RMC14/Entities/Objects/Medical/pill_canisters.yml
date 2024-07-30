@@ -46,8 +46,6 @@
   - type: Tag
     tags:
     - PillCanister
-  - type: StorageSkillRequired
-    medical: 2
   - type: IconLabel
     textColor: White
     storedOffset: 3, 12

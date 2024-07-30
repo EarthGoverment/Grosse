@@ -238,7 +238,7 @@
       entries:
       - id: RMCSpeedLoader44Marksman
         amount: 10
-      - id: 10TGMCMagazineRifleAKMCAP
+      - id: TGMCMagazineRifleAKMCAP
         points: 2
       - id: TGMCMagazineRifleM28AP
         points: 2
