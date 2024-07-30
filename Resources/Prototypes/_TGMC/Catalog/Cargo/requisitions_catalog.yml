@@ -11,7 +11,9 @@
       - cost: 6000
         crate: TGMCCrateBoxMagazineRifleAP
       - cost: 6000
-        crate: CMCrateBoxMagazineSMGAP
+        crate: TGMCCrateBoxMagazineSMGAP
+      - cost: 3000
+        crate: TGMCCrateBoxMagazineMinigun
     - name: Attachments
       entries:
       - cost: 3000

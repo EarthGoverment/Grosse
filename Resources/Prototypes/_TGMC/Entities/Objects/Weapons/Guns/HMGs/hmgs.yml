@@ -12,6 +12,7 @@
     sprite: _TGMC/Objects/Weapons/Gunsx64/LMGs/minigun/tiny.rsi
     size: Ginormous
   - type: GunIFF
+    enabled: true
   - type: Gun
     minAngle: 1
     maxAngle: 30
@@ -40,10 +41,10 @@
   - type: HeldSpeedModifier
   - type: GunRequiresSkills
     skills:
-      smartGun: 1
+      RMCSkillSmartGun: 1
   - type: GunSkilledRecoil
     skills:
-      firearms: 100
+      RMCSkillFirearms: 100
   - type: RMCMagneticItem
   - type: GunToggleableRecoil
   - type: GunToggleableAutoFire

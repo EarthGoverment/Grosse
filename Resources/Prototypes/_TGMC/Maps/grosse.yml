@@ -45,12 +45,9 @@
             # Marines
             CMSquadLeader: [4, 4]
             CMSmartGunOperator: [4, 4]
-            CMCombatTech: [8, 12]
-            CMHospitalCorpsman: [8, 16]
+            CMCombatTech: [4, 4]
+            CMHospitalCorpsman: [4, 4]
             CMRifleman: [ -1, -1 ]
-
-            # Civilians
-            CMCorrespondent: [2, 2]
 
             # Other
             CMLiaison: [1, 1]

@@ -48,7 +48,11 @@
     - name: Utilities
       entries:
       - id: RMCWhistle
+        amount: 1
+      - id: RMCBinoculars
+        amount: 1
       - id: CMFireExtinguisherPortable
+        amount: 10
     - name: Binoculars
       entries: [ ]
     - name: Helmet Optics
@@ -69,28 +73,6 @@
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
-    - name: Medical Supplies
-      entries:
-      - id: CMBurnKit10
-        points: 2
-      - id: CMTraumaKit10
-        points: 2
-      - id: CMAdvFirstAidKitFilled
-        points: 12
-      - id: CMBicaridineAutoInjector
-        points: 1
-      - id: CMDexalinPlusAutoInjector
-        points: 1
-      - id: CMInaprovalineAutoInjector
-        points: 1
-      - id: CMKelotaneAutoInjector
-        points: 1
-      - id: CMTricordrazineAutoInjector
-        points: 1
-      - id: CMHealthAnalyzer
-        points: 4
-      - id: CMRollerBedSpawnFolded
-        points: 2
     - name: Radio Keys
       entries:
       - id: CMEncryptionKeyEngineer
