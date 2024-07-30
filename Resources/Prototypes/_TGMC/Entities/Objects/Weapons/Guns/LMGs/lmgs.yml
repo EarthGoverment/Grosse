@@ -8,6 +8,7 @@
   - type: Corrodible
     isCorrodible: false
   - type: GunIFF
+    enabled: true
   - type: WieldDelay
     baseDelay: 0.4
   - type: WieldableSpeedModifiers
@@ -93,10 +94,10 @@
   - type: RMCMagneticItem
   - type: GunRequiresSkills
     skills:
-      smartGun: 1
+      RMCSkillSmartGun: 1
   - type: GunSkilledRecoil
     skills:
-      firearms: 100
+      RMCSkillFirearms: 100
   - type: GunDrainBatteryOnShoot
   - type: GunToggleableRecoil
   - type: GunToggleableAutoFire
@@ -121,6 +122,7 @@
   - type: Corrodible
     isCorrodible: false
   - type: GunIFF
+    enabled: true
   - type: WieldDelay
     baseDelay: 0.4
   - type: WieldableSpeedModifiers
@@ -204,9 +206,6 @@
         sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
         state: ammo_swap_ap
   - type: RMCMagneticItem
-  - type: GunSkilledRecoil
-    skills:
-      firearms: 1
   - type: GunDrainBatteryOnShoot
   - type: GunToggleableRecoil
   - type: GunToggleableAutoFire

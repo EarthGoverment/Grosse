@@ -95,7 +95,7 @@
 
 - type: entity
   parent: CMCrateAmmo
-  id: CMCrateBoxMagazineSMGAP
+  id: TGMCCrateBoxMagazineSMGAP
   name: SMG magazine AP box (3x Box)
   components:
   - type: StorageFill
@@ -103,3 +103,12 @@
     - id: TGMCBoxMagazineRifleP90AP
     - id: TGMCBoxMagazineRifleMP5AP
     - id: TGMCBoxMagazineRifleVectorAP
+
+- type: entity
+  parent: CMCrateAmmo
+  id: TGMCCrateBoxMagazineMinigun
+  name: Ammunition box (5.56)
+  components:
+  - type: StorageFill
+    contents:
+    - id: TGMCMagazineBoxCaselessRifle556

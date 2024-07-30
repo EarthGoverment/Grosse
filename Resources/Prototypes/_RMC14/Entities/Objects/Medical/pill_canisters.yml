@@ -46,9 +46,6 @@
   - type: Tag
     tags:
     - PillCanister
-  - type: StorageSkillRequired
-    skills:
-      RMCSkillMedical: 2
   - type: IconLabel
     textColor: White
     storedOffset: 3, 12
