@@ -68,7 +68,8 @@ namespace Content.IntegrationTests.Tests
             "CMDev",
             "Savannah",
             "Almayer",
-            "Grosse"
+            "Grosse",
+            "RMCAdminFax"
         };
 
         /// <summary>
