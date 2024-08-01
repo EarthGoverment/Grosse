@@ -53,6 +53,7 @@
   components:
   - type: CMVendorBundle
     bundle:
+    - ClothingEyesGlassesMeson
     - CMVendorHeadsetSquadComTech
     - CMHandsInsulated
     - CMBootsBlackFilled
@@ -67,12 +68,12 @@
     state: icon
   - type: CMVendorBundle
     bundle:
+    - TGMCC4
     - CMSandbagEmpty25
     - CMSheetMetal50
     - CMSheetPlasteel40
     - RMCPowerCellHigh
     - CMEntrenchingTool
-    - CMLightReplacer
 #    - CMAPCElectronics # TODO RMC14 uncomment when power
 
 - type: entity

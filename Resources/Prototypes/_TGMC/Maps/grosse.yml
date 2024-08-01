@@ -17,14 +17,12 @@
             # Command
             CMCommandingOfficer: [1, 1]
             CMExecutiveOfficer: [1, 1]
-            CMStaffOfficer: [2, 2]
 
             # Auxiliary
             CMAuxiliarySupportOfficer: [1, 1]
 #            CMIntelOfficer: [4, 4]
             CMPilotDropship: [1, 1] # TODO RMC14 1
 #            CMPilotGunship: [1, 1]
-            CMDropshipCrewChief: [1, 1]
 
             # Engineering
 #            CMChiefEngineer: [1, 1]
@@ -48,6 +46,3 @@
             CMCombatTech: [4, 4]
             CMHospitalCorpsman: [4, 4]
             CMRifleman: [ -1, -1 ]
-
-            # Other
-            CMLiaison: [1, 1]

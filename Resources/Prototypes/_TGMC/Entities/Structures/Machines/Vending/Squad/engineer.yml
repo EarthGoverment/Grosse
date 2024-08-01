@@ -15,60 +15,33 @@
     - name: Engineer Set (Mandatory)
       takeAll: CMEngineerSet
       entries:
-      - id: CMVendorBundleCombatTechnicianEssentials
+      - id: TGMCVendorBundleCombatTechnicianEssentials
     - name: Handheld Defense
       entries: [ ]
     - name: Engineering Supplies
       entries:
-      - id: RMCPowerCellHigh
-        points: 3
       - id: CMSheetMetal10
         points: 2
       - id: CMSheetPlasteel10
-        points: 3
+        points: 4
       - id: TGMCC4
         points: 5
       - id: CMSandbagEmpty25
         points: 5
       - id: RMCPowerCellSuper
         points: 5
-    - name: Explosives
-      entries:
-      - id: CMPacketGrenadeHighExplosiveFilled
-        points: 18
     - name: Armors
       entries:
       - id: TGMCArmorB12
-        points: 15
-    - name: Clothing Items
-      entries:
-      - id: CMPouchMacheteFilled
-        points: 8
-      - id: CMPouchGeneralLarge
-        points: 6
-      - id: CMBeltUtilityCombat
         points: 15
     - name: Utilities
       entries:
       - id: CMFireExtinguisherPortable
       - id: RMCWhistle
-    - name: Binoculars
-      entries: [ ]
     - name: Helmet Optics
       entries: [ ]
     - name: Pamphlets
       entries: [ ]
-    - name: Radio Keys
-      entries:
-      - id: CMEncryptionKeyIntel
-        amount: 3
-        points: 3
-      - id: CMEncryptionKeyJTAC
-        amount: 3
-        points: 3
-      - id: CMEncryptionKeyRequisition
-        amount: 3
-        points: 3
 
 - type: entity
   parent: ColMarTechSCTEquipment
@@ -120,26 +93,29 @@
       entries:
       - id: CMBeltMarine
       - id: CMBeltUtilityFilled
-      - id: RMCBeltGrenade
     - name: Pouches
-      choices: { CMPouch: 2 }
+      choices: { RMCPouch: 2 }
       entries:
-      - id: CMPouchConstruction
-      - id: CMPouchFirstAidInjectors
+      - id: RMCPouchConstruction
+        recommended: true
+      - id: RMCPouchFirstAidInjectors
         name: first-aid pouch (refillable injectors)
-      - id: CMPouchFirstAidSplintsGauzeOintment
+        recommended: true
+      - id: RMCPouchFirstAidSplintsGauzeOintment
         name: first-aid pouch (gauze, ointment)
-      - id: CMPouchFirstAidPills
+        recommended: true
+      - id: RMCPouchFirstAidPills
         name: first-aid pouch (pills)
-      - id: CMPouchExplosive
-      - id: CMPouchFlareFilled
-        name: Flare pouch (Filled)
-      - id: CMPouchMagazinePistolLarge
-      - id: CMPouchMagazine
-      - id: CMPouchShotgun
-      - id: CMPouchGeneralMedium
-      - id: CMPouchPistol
-      - id: CMPouchToolsFill
+        recommended: true
+      - id: RMCPouchExplosive
+      - id: RMCPouchFlareFilled
+        name: Flare pouch (Full)
+      - id: RMCPouchMagazinePistolLarge
+      - id: RMCPouchMagazine
+      - id: RMCPouchShotgun
+      - id: RMCPouchGeneralMedium
+      - id: RMCPouchPistol
+      - id: RMCPouchToolsFill
         name: Tools pouch (Filled)
     - name: Accessories
       choices: { CMAccessories: 1 }

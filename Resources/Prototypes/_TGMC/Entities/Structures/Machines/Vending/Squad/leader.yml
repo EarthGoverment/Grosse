@@ -49,44 +49,14 @@
       entries:
       - id: RMCWhistle
         amount: 1
-      - id: RMCBinoculars
-        amount: 1
       - id: CMFireExtinguisherPortable
         amount: 10
     - name: Binoculars
-      entries: [ ]
+      entries:
+      - id: RMCBinoculars
+        amount: 1
     - name: Helmet Optics
       entries: [ ]
-    - name: Engineering Supplies
-      entries:
-      - id: CMHandsInsulated
-        points: 1
-      - id: CMSheetMetal10
-        points: 2
-      - id: CMSheetPlasteel10
-        points: 3
-      - id: CMSandbagEmpty25
-        points: 5
-      - id: CMPouchToolsFill
-        points: 5
-    - name: Explosives
-      entries:
-      - id: CMPacketGrenadeHighExplosiveFilled
-        points: 18
-    - name: Radio Keys
-      entries:
-      - id: CMEncryptionKeyEngineer
-        amount: 3
-        points: 3
-      - id: CMEncryptionKeyIntel
-        amount: 3
-        points: 3
-      - id: CMEncryptionKeyJTAC
-        amount: 3
-        points: 3
-      - id: CMEncryptionKeyRequisition
-        amount: 3
-        points: 3
 
 - type: entity
   parent: ColMarTechSLEquipment
@@ -138,23 +108,25 @@
       - id: CMBeltMedicBag
       - id: CMBeltMedical
       - id: CMBeltUtilityFilled
-      - id: RMCBeltGrenade
     - name: Pouches
-      choices: { CMPouch: 2 }
+      choices: { RMCPouch: 2 }
       entries:
-      - id: CMPouchAutoinjectorFill
-      - id: CMPouchFirstAidInjectors
+      - id: RMCPouchAutoinjectorFill
+        recommended: true
+      - id: RMCPouchFirstAidInjectors
         name: first-aid pouch (refillable injectors)
-      - id: CMPouchFirstAidSplintsGauzeOintment
+      - id: RMCPouchFirstAidSplintsGauzeOintment
         name: first-aid pouch (gauze, ointment)
-      - id: CMPouchFirstAidPills
+      - id: RMCPouchFirstAidPills
         name: first-aid pouch (pills)
-      - id: CMPouchFlareFilled
-        name: Flare pouch (Filled)
-      - id: CMPouchGeneralLarge
-      - id: CMPouchMagazineLarge
-      - id: CMPouchMagazinePistolLarge
-      - id: CMPouchPistol
+        recommended: true
+      - id: RMCPouchFlareFilled
+        name: Flare pouch (Full)
+      - id: RMCPouchGeneralLarge
+        recommended: true
+      - id: RMCPouchMagazineLarge
+      - id: RMCPouchMagazinePistolLarge
+      - id: RMCPouchPistol
     - name: Accessories
       choices: { CMAccessories: 1 }
       entries:

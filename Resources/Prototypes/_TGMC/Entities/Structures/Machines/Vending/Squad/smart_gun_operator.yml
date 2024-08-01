@@ -42,30 +42,14 @@
       choices: { CMGunAmmunition: 1 }
       entries:
       - id: RMCGlassesSmartGunSight
-    - name: Explosives
-      entries:
-      - id: CMPacketGrenadeHighExplosiveFilled
-        points: 30
     - name: Utilities
       entries:
       - id: CMFireExtinguisherPortable
       - id: RMCWhistle
-    - name: Binoculars
-      entries: [ ]
     - name: Helmet Optics
       entries: [ ]
     - name: Pamphlets
       entries: [ ]
-    - name: Radio Keys
-      entries:
-      - id: CMEncryptionKeyEngineer
-        points: 5
-      - id: CMEncryptionKeyIntel
-        points: 5
-      - id: CMEncryptionKeyJTAC
-        points: 5
-      - id: CMEncryptionKeyRequisition
-        points: 5
 
 - type: entity
   parent: ColMarTechSGEquipment
@@ -107,24 +91,26 @@
       - id: TGMCArmorHelmetDemolitionist
         name: heavy helmets
     - name: Pouches
-      choices: { CMPouch: 2 }
+      choices: { RMCPouch: 2 }
       entries:
-      - id: CMPouchFlareFilled
-        name: Flare pouch (Filled)
-      - id: CMPouchFirstAidInjectors
+      - id: RMCPouchFlareFilled
+        name: Flare pouch (Full)
+      - id: RMCPouchFirstAidInjectors
         name: first-aid pouch (refillable injectors)
         recommended: true
-      - id: CMPouchFirstAidSplintsGauzeOintment
+      - id: RMCPouchFirstAidSplintsGauzeOintment
         name: first-aid pouch (gauze, ointment)
         recommended: true
-      - id: CMPouchFirstAidPills
+      - id: RMCPouchFirstAidPills
         name: first-aid pouch (pills)
         recommended: true
-      - id: CMPouchMagazine
-      - id: CMPouchShotgun
-      - id: CMPouchGeneralMedium
-      - id: CMPouchPistol
-      - id: CMPouchMacheteFilled
+      - id: RMCPouchMagazinePistolLarge
+        recommended: true
+      - id: RMCPouchMagazine
+      - id: RMCPouchShotgun
+      - id: RMCPouchGeneralMedium
+      - id: RMCPouchPistol
+      - id: RMCPouchMacheteFilled
     - name: Accessories
       choices: { CMAccessories: 1 }
       entries:
