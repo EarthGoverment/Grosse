@@ -50,45 +50,32 @@
       - id: CMBeltKnifeFilled
         name: M276 knife rig (full)
       - id: CMBeltUtility
-      - id: RMCBeltGrenade
     - name: Pouches
-      choices: { CMPouch: 2 }
+      choices: { RMCPouch: 2 }
       entries:
-      - id: CMPouchBayonetFill
-      - id: CMPouchFirstAidInjectors
+      - id: RMCPouchBayonetFill
+      - id: RMCPouchFirstAidInjectors
         name: first-aid pouch (refillable injectors)
         recommended: true
-      - id: CMPouchFirstAidSplintsGauzeOintment
+      - id: RMCPouchFirstAidSplintsGauzeOintment
         name: first-aid pouch (gauze, ointment)
         recommended: true
-      - id: CMPouchFirstAidPills
+      - id: RMCPouchFirstAidPills
         name: first-aid pouch (pills)
         recommended: true
-      - id: CMPouchFlareFilled
-        name: Flare pouch (Filled)
+      - id: RMCPouchFlareFilled
+        name: Flare pouch (Full)
         recommended: true
-      - id: CMPouchMagazine
-      - id: CMPouchShotgun
-      - id: CMPouchGeneral
-      - id: CMPouchMagazinePistol
-      - id: CMPouchPistol
+      - id: RMCPouchMagazine
+      - id: RMCPouchShotgun
+      - id: RMCPouchGeneral
+      - id: RMCPouchMagazinePistol
+      - id: RMCPouchPistol
     - name: Mask
       choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
-    - name: Engineering Supplies
-      entries:
-      - id: CMEntrenchingTool
-        points: 5
-      - id: CMSandbagEmpty50
-        points: 5
-      - id: CMWelderSmall
-        points: 2
-    - name: Explosives
-      entries:
-      - id: CMPacketGrenadeHighExplosiveFilled
-        points: 20
     - name: Clothing Items
       entries:
       - id: CMWebbing
@@ -101,23 +88,7 @@
       entries:
       - id: CMFireExtinguisherPortable
         amount: 10
-    - name: Binoculars
-      entries: [ ]
     - name: Helmet Optics
       entries: [ ]
     - name: Pamphlets
       entries: [ ]
-    - name: Radio Keys
-      entries:
-      - id: CMEncryptionKeyEngineer
-        amount: 5
-        points: 5
-      - id: CMEncryptionKeyIntel
-        amount: 5
-        points: 5
-      - id: CMEncryptionKeyJTAC
-        amount: 5
-        points: 5
-      - id: CMEncryptionKeyRequisition
-        amount: 5
-        points: 5

@@ -6854,14 +6854,6 @@ entities:
     - type: Transform
       pos: 5.5,4.5
       parent: 1
-- proto: CMGroundsideOperationsConsole
-  entities:
-  - uid: 2496
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -41.5,-7.5
-      parent: 1
 - proto: CMHandLabeler
   entities:
   - uid: 1077
@@ -9571,13 +9563,6 @@ entities:
     components:
     - type: Transform
       pos: 29.5,-22.5
-      parent: 1
-- proto: CMPouchSyringeFill
-  entities:
-  - uid: 6903
-    components:
-    - type: Transform
-      pos: 29.453815,-1.820926
       parent: 1
 - proto: CMRack
   entities:
@@ -30569,6 +30554,22 @@ entities:
     - type: Transform
       pos: 26.5,-1.5
       parent: 1
+- proto: RMCGroundsideOperationsConsole
+  entities:
+  - uid: 2496
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -41.5,-7.5
+      parent: 1
+- proto: RMCOverwatchConsole
+  entities:
+  - uid: 3068
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -45.5,-10.5
+      parent: 1
 - proto: RMCPlatformCornerSmall
   entities:
   - uid: 2232
@@ -30730,6 +30731,13 @@ entities:
       name: sec
     - type: Transform
       pos: -33.5,-10.5
+      parent: 1
+- proto: RMCPouchSyringeFill
+  entities:
+  - uid: 6903
+    components:
+    - type: Transform
+      pos: 29.453815,-1.820926
       parent: 1
 - proto: RMCRecharger
   entities:
