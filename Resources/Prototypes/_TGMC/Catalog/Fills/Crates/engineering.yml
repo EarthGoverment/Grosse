@@ -1,6 +1,6 @@
 - type: entity
   id: TGMCCrateC4
-  parent: CMCrateConstruction
+  parent: RMCCrateConstruction
   name: C4
   components:
   - type: StorageFill
