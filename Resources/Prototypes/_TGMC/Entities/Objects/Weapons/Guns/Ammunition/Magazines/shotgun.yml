@@ -1,5 +1,5 @@
 - type: entity
-  parent: CMBoxShotgunBase
+  parent: RMCBoxShotgunBase
   id: TGMCBoxShotgunBuckshot
   name: box of buckshot shells
   description: A box filled with buckshot spread shotgun shells. 12 Gauge.

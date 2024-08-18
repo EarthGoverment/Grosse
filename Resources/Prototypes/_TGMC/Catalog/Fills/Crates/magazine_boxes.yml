@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleAKMCAP
   name: Box magazine rifle AKMC
   suffix: Filled
@@ -13,7 +13,7 @@
         - TGMCMagazineRifleAKMCAP
 
 - type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleG36AP
   name: Box magazine rifle G-36
   suffix: Filled
@@ -27,7 +27,7 @@
         - TGMCMagazineRifleG36AP
 
 - type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleM28AP
   name: Box magazine rifle M-28
   suffix: Filled
@@ -41,7 +41,7 @@
         - TGMCMagazineRifleM28AP
 
 - type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleP90AP
   name: Box magazine SMG P-90
   suffix: Filled
@@ -55,7 +55,7 @@
         - TGMCMagazineRifleP90AP
 
 - type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleMP5AP
   name: Box magazine SMG MP-5
   suffix: Filled
@@ -69,7 +69,7 @@
         - TGMCMagazineRifleMP5AP
 
 - type: entity
-  parent: CMBoxMagazineRifleM54CEmpty
+  parent: RMCBoxMagazineRifleM54CEmpty
   id: TGMCBoxMagazineRifleVectorAP
   name: Box magazine SMG V-21
   suffix: Filled
@@ -83,7 +83,7 @@
         - TGMCMagazineRifleVectorAP
 
 - type: entity
-  parent: CMCrateAmmo
+  parent: RMCCrateAmmo
   id: TGMCCrateBoxMagazineRifleAP
   name: Rifle magazine AP box (3x Box)
   components:
@@ -94,7 +94,7 @@
     - id: TGMCBoxMagazineRifleM28AP
 
 - type: entity
-  parent: CMCrateAmmo
+  parent: RMCCrateAmmo
   id: TGMCCrateBoxMagazineSMGAP
   name: SMG magazine AP box (3x Box)
   components:
@@ -105,7 +105,7 @@
     - id: TGMCBoxMagazineRifleVectorAP
 
 - type: entity
-  parent: CMCrateAmmo
+  parent: RMCCrateAmmo
   id: TGMCCrateBoxMagazineMinigun
   name: Ammunition box (5.56)
   components:
